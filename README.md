@@ -6,10 +6,10 @@
 
 <p>
   <a href="https://github.com/kanishkpaul">
-    <img src="https://img.shields.io/github/followers/kanishkpaul?style=for-the-badge&logo=github&label=Followers&color=111827" alt="GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-12-111827?style=for-the-badge&logo=github" alt="GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
-    <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=github&label=Public%20Repos&color=0f172a&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fkanishkpaul" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-11-0f172a?style=for-the-badge&logo=github" alt="Public repositories" />
   </a>
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-kanishkpaul1729%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Kanishk on Gmail" />
@@ -42,25 +42,20 @@ If that sounds intense, good. That is the point.
 ## stats that matter
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=kanishkpaul&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&theme=transparent" alt="GitHub stats for Kanishk Paul" />
+  <img src="https://img.shields.io/badge/Stars%20Received-5-111827?style=for-the-badge&logo=github" alt="5 stars received" />
+  <img src="https://img.shields.io/badge/Followers-12-0f172a?style=for-the-badge&logo=github" alt="12 GitHub followers" />
+  <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
+  <img src="https://img.shields.io/badge/Public%20Repos-11-020617?style=for-the-badge&logo=github" alt="11 public repositories" />
 </div>
 
 ## four pinned projects
 
-<div align="center">
-  <a href="https://github.com/kanishkpaul/stockfih">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanishkpaul&repo=stockfih&theme=transparent&hide_border=true" alt="stockfih repository card" />
-  </a>
-  <a href="https://github.com/kanishkpaul/chromeclaw">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanishkpaul&repo=chromeclaw&theme=transparent&hide_border=true" alt="chromeclaw repository card" />
-  </a>
-  <a href="https://github.com/kanishkpaul/parameter-golf">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanishkpaul&repo=parameter-golf&theme=transparent&hide_border=true" alt="parameter-golf repository card" />
-  </a>
-  <a href="https://github.com/kanishkpaul/gstack-k">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=kanishkpaul&repo=gstack-k&theme=transparent&hide_border=true" alt="gstack-k repository card" />
-  </a>
-</div>
+| project | why it is cool | signals |
+| --- | --- | --- |
+| [stockfih](https://github.com/kanishkpaul/stockfih) | chess analysis with stockfish plus language-model coaching | `TypeScript` · `1 star` |
+| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | terminal-first browser agent with traces, safety gates, and eval scaffolding | `TypeScript` · `1 star` |
+| [reasontrace](https://github.com/kanishkpaul/reasontrace) | visual debugger for reasoning traces, replay, and inspection | `TypeScript` · `1 star` |
+| [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for action reliability research | `Python` · `1 star` |
 
 ## call to action
 
