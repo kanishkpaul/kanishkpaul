@@ -33,7 +33,7 @@ I am building at the edge of **AGI/ASI**, with a deep obsession for **reasoning*
 
 I like first-principles thinking, ambitious systems, and products that turn raw model capability into real leverage. The lane I care about most is simple: build machines that can **reason better, act better, and think with more structure**.
 
-I believe the greatest unlocks happen when we cconnect **disparate fields together**. When needed, I challenge assumptions, thinking at a level above first principles.
+I believe the greatest unlocks happen when we connect **disparate fields together**. When needed, I challenge assumptions, thinking at a level above first principles.
 
 If that sounds intense, good. That is the point.
 
