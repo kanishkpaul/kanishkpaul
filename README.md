@@ -1,88 +1,43 @@
-<div align="center">
+# Kanishk Paul
 
-<br/>
+I build AI systems, developer tools, and agent interfaces with a bias toward inspectability. I like projects where the reasoning is visible, the failure modes are useful, and the system is honest about what it can and cannot do.
 
-<!-- Modern SVG Banner -->
-  <h1>KANISHK PAUL</h1>
-  <h3>AI RESEARCHER • BUILDER • FOUNDER</h3>
-  <hr width="100" size="1" color="#30363D" />
+Most of my repos are active working builds. I keep adding features, refining the interface, and tightening the internals instead of treating them like frozen portfolio artifacts.
 
-<br/>
+I am especially interested in research engineering work around agents, reasoning, evaluation, and AI product systems.
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-161B22?style=for-the-badge&logo=linkedin&logoColor=0077B5)](https://linkedin.com/in/kanishk-paul)
-[![𝕏/Twitter](https://img.shields.io/badge/𝕏_SOCIAL-161B22?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/kanishkpaul)
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-161B22?style=for-the-badge&logo=google-chrome&logoColor=white)](http://kanishkpaul.me)
-[![Email](https://img.shields.io/badge/EMAIL_ME-161B22?style=for-the-badge&logo=gmail&logoColor=D14836)](https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com)
+## What I work on
 
-<br/><br/>
+- browser agents and desktop-use agents
+- reasoning-trace tooling and evaluation surfaces
+- product interfaces around LLMs and search systems
+- practical scaffolds for safety, replay, and observability
 
-### Beyond Predictions: Building Autonomous Reasoners
+## Public repo signals
 
-I am an AI Researcher and Startup Founder focused on bridging the gap between large-scale language models and autonomous reasoning. My work centers on building systems that don't just predict the next token, but understand the underlying logic of their actions.
+- 11 public repositories
+- 3 total stars across public repos, counting self-stars too
+- Current focus: agent systems, reasoning tooling, and AI product engineering
 
-**Currently architectural focus:** Multi-agent orchestration, RAG optimization, and test-time compute scaling.
+## Selected projects
 
-</div>
+- ♟️ [Stockfih](https://github.com/kanishkpaul/stockfih) - Chess analysis app that combines in-browser Stockfish evaluation with short LLM-based coaching.
+- 🕷️ [ChromeClaw](https://github.com/kanishkpaul/chromeclaw) - Terminal-first browser agent with Playwright control, JSONL traces, safety gates, and a small eval harness.
+- 🌳 [ReasonTrace](https://github.com/kanishkpaul/reasontrace) - Visual debugger for reasoning traces that turns raw agent logs into graphs, diagnostics, and replayable inspection.
+- 🖥️ [Casca](https://github.com/kanishkpaul/casca) - Screenshot-based desktop agent scaffold for studying grounded actions, logging, replay, and reliability.
 
-<br/>
+## What I care about in AI systems
 
----
+- grounded interaction over flashy demos
+- evaluation and replay over vague claims
+- interfaces that expose useful structure instead of hiding it
+- building quickly without losing technical taste
 
-### 🧬 Core Specialization
+## Links
 
-<table width="100%" border="0">
-<tr>
-<td width="33%" valign="top">
-<h4>🧠 LLM Reasoning</h4>
-Chain-of-thought, self-reflection, and structured planning architectures.
-</td>
-<td width="33%" valign="top">
-<h4>🤖 Agentic Systems</h4>
-Autonomous tool-use, multi-agent coordination, and emergent intelligence.
-</td>
-<td width="33%" valign="top">
-<h4>🏗️ AI Infrastructure</h4>
-RAG pipelines, vector databases, and scalable inference optimization.
-</td>
-</tr>
-</table>
+- Portfolio: [kanishkpaul.me](http://kanishkpaul.me)
+- LinkedIn: [kanishk-paul](https://linkedin.com/in/kanishk-paul)
+- X/Twitter: [@kanishkpaul](https://twitter.com/kanishkpaul)
+- Email: [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com)
 
-### 🛠️ Tech Stack & Ecosystem
-
-<div align="center">
-
-| Domain | Tools & Technologies |
-| :--- | :--- |
-| **Artificial Intelligence** | `Python` `PyTorch` `Transformers` `LangChain` `OpenAI` `Anthropic` |
-| **Architectures** | `FastAPI` `PostgreSQL` `Redis` `Pinecone` `Docker` `GCP` |
-| **Development** | `TypeScript` `Next.js` `React` `TailwindCSS` `Linux` |
-
-</div>
-
-<br/>
-
-### 📊 Performance Metrics
-
-<div align="center">
-  <img width="97%" src="https://github-readme-activity-graph.vercel.app/graph?username=kanishkpaul&bg_color=0D1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true&custom_title=Activity%20Timeline" alt="Activity Graph" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="97%" src="https://github-readme-streak-stats.herokuapp.com/?user=kanishkpaul&theme=transparent&currStreakLabel=58a6ff&sideLabels=8b949e&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e&hide_border=true" alt="GitHub Streak" />
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-*"The goal is not to build AI that replaces thinking. It's to build AI that makes thinking worth doing."*
-
-[Reach out for collaborations or wild ideas](https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com)
-
-<sub>© 2026 Kanishk Paul • Powered by logic and curiosity</sub>
-
-</div>
+If you are interested in agent systems, reasoning infrastructure, or early-stage AI product work, feel free to reach out.
