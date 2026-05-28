@@ -1,6 +1,9 @@
 <div align="center">
 
-# kanishk paul
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2200&pause=1000&color=00F72F&center=true&vCenter=true&width=700&lines=%3E+Kanishk+Paul;_+Kanishk+Paul;whoami%3A+Kanishk+Paul" alt="Typing SVG" />
+</p>
+
 
 ### building toward agi/asi with a reasoning-first brain
 
