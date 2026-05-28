@@ -5,7 +5,7 @@
 </p>
 
 
-### building toward agi/asi with a reasoning-first brain
+### building toward agi/asi with a reasoning-first neurosymbolic approach
 
 <p>
   <a href="https://github.com/kanishkpaul">
@@ -21,8 +21,8 @@
 
 <p>
   <img src="https://img.shields.io/badge/Focus-AGI%20%2F%20ASI-0b1220?style=flat-square" alt="Focus on AGI and ASI" />
-  <img src="https://img.shields.io/badge/Obsession-Reasoning-111827?style=flat-square" alt="Obsession with reasoning" />
-  <img src="https://img.shields.io/badge/Domain-Intelligence%20%26%20Philosophy-1f2937?style=flat-square" alt="Intelligence and philosophy" />
+  <img src="https://img.shields.io/badge/Obsession-Reasoning-111827?style=flat-square" alt="Obsession with reasoning systems and philosophy" />
+  <img src="https://img.shields.io/badge/Domain-Intelligence%20%26%20Philosophy-1f2937?style=flat-square" alt="Intelligence and Philosophy" />
 </p>
 
 </div>
@@ -33,13 +33,15 @@ I am building at the edge of **AGI/ASI**, with a deep obsession for **reasoning*
 
 I like first-principles thinking, ambitious systems, and products that turn raw model capability into real leverage. The lane I care about most is simple: build machines that can **reason better, act better, and think with more structure**.
 
+I believe the greatest unlocks happen when we cconnect **disparate fields together**. When needed, I challenge assumptions, thinking at a level above first principles.
+
 If that sounds intense, good. That is the point.
 
 ## what i am locked in on
 
-- reasoning systems, test-time compute, and structured problem solving
+- reasoning systems, chain-of-thought type reasoning, neurosymbolic ai
 - agentic workflows, tool use, and multi-agent intelligence
-- agi/asi, alignment-adjacent questions, and philosophy of mind
+- agi/asi, alignment-adjacent questions, and philosophy of mind and conciousness
 - shipping products that feel sharp, useful, and a little unfair
 
 ## stats that matter
@@ -66,12 +68,9 @@ If you are building around **reasoning**, **agents**, **agi**, **intelligence re
 
 <div align="center">
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com">
-    <img src="https://img.shields.io/badge/Let%27s%20Build%20Something%20Ridiculous-Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me" />
+    <img src="https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me" />
   </a>
   <a href="https://kanishkpaul.me">
-    <img src="https://img.shields.io/badge/Portfolio-kanishkpaul.me-0f172a?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://www.linkedin.com/in/kanishk-paul">
-    <img src="https://img.shields.io/badge/LinkedIn-kanishk--paul-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/kanishkpaul.me-0f172a?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 </div>
