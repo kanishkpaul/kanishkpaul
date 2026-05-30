@@ -4,16 +4,17 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2200&pause=1000&color=00F72F&center=true&vCenter=true&width=700&lines=%3E+Kanishk+Paul;_+Kanishk+Paul;whoami%3A+Kanishk+Paul" alt="Typing SVG" />
 </p>
 
-
 ### building toward agi/asi with a reasoning-first neurosymbolic approach
 
 <p>
+  <!-- profile-badges:start -->
   <a href="https://github.com/kanishkpaul">
-    <img src="https://img.shields.io/badge/Followers-12-111827?style=for-the-badge&logo=github" alt="GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-12-111827?style=for-the-badge&logo=github" alt="12 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-11-0f172a?style=for-the-badge&logo=github" alt="Public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-11-0f172a?style=for-the-badge&logo=github" alt="11 public repositories" />
   </a>
+<!-- profile-badges:end -->
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-kanishkpaul1729%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Kanishk on Gmail" />
   </a>
@@ -47,20 +48,24 @@ If that sounds intense, good. That is the point.
 ## stats that matter
 
 <div align="center">
+  <!-- stats-badges:start -->
   <img src="https://img.shields.io/badge/Stars%20Received-5-111827?style=for-the-badge&logo=github" alt="5 stars received" />
   <img src="https://img.shields.io/badge/Followers-12-0f172a?style=for-the-badge&logo=github" alt="12 GitHub followers" />
-  <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
+  <img src="https://img.shields.io/badge/Following-9-1f2937?style=for-the-badge&logo=github" alt="9 following" />
   <img src="https://img.shields.io/badge/Public%20Repos-11-020617?style=for-the-badge&logo=github" alt="11 public repositories" />
+<!-- stats-badges:end -->
 </div>
 
 ## four pinned projects
 
+<!-- pinned-projects:start -->
 | project | why it is cool | signals |
 | --- | --- | --- |
-| [stockfih](https://github.com/kanishkpaul/stockfih) | chess analysis with stockfish plus language-model coaching | `TypeScript` · `1 star` |
-| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | terminal-first browser agent with traces, safety gates, and eval scaffolding | `TypeScript` · `1 star` |
-| [reasontrace](https://github.com/kanishkpaul/reasontrace) | visual debugger for reasoning traces, replay, and inspection | `TypeScript` · `1 star` |
-| [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for action reliability research | `Python` · `1 star` |
+| [stockfih](https://github.com/kanishkpaul/stockfih) | chess analysis with stockfish plus language-model coaching | `TypeScript` &middot; `1 star` |
+| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | terminal-first browser agent with traces, safety gates, and eval scaffolding | `TypeScript` &middot; `1 star` |
+| [reasontrace](https://github.com/kanishkpaul/reasontrace) | visual debugger for reasoning traces, replay, and inspection | `TypeScript` &middot; `1 star` |
+| [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for action reliability research | `Python` &middot; `1 star` |
+<!-- pinned-projects:end -->
 
 ## call to action
 
