@@ -56,7 +56,7 @@ If that sounds intense, good. That is the point.
 <!-- stats-badges:end -->
 </div>
 
-## four pinned projects
+## pinned projects
 
 <!-- pinned-projects:start -->
 | project | why it is cool | signals |
@@ -67,7 +67,7 @@ If that sounds intense, good. That is the point.
 | [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for action reliability research | `Python` &middot; `1 star` |
 <!-- pinned-projects:end -->
 
-## call to action
+## reach out
 
 If you are building around **reasoning**, **agents**, **agi**, **intelligence research**, or just weird ambitious things on the internet, I am always down to talk.
 
