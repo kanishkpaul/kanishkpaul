@@ -49,7 +49,7 @@ If that sounds intense, good. That is the point.
 
 <div align="center">
   <!-- stats-badges:start -->
-  <img src="https://img.shields.io/badge/Stars%20Received-7-111827?style=for-the-badge&logo=github" alt="7 stars received" />
+  <img src="https://img.shields.io/badge/Stars%20Received-6-111827?style=for-the-badge&logo=github" alt="6 stars received" />
   <img src="https://img.shields.io/badge/Followers-13-0f172a?style=for-the-badge&logo=github" alt="13 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
   <img src="https://img.shields.io/badge/Public%20Repos-14-020617?style=for-the-badge&logo=github" alt="14 public repositories" />
