@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Followers-15-111827?style=for-the-badge&logo=github" alt="15 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-12-0f172a?style=for-the-badge&logo=github" alt="12 public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-13-0f172a?style=for-the-badge&logo=github" alt="13 public repositories" />
   </a>
 <!-- profile-badges:end -->
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kanishkpaul1729@gmail.com">
@@ -52,7 +52,7 @@ If that sounds intense, good. That is the point.
   <img src="https://img.shields.io/badge/Stars%20Received-7-111827?style=for-the-badge&logo=github" alt="7 stars received" />
   <img src="https://img.shields.io/badge/Followers-15-0f172a?style=for-the-badge&logo=github" alt="15 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
-  <img src="https://img.shields.io/badge/Public%20Repos-12-020617?style=for-the-badge&logo=github" alt="12 public repositories" />
+  <img src="https://img.shields.io/badge/Public%20Repos-13-020617?style=for-the-badge&logo=github" alt="13 public repositories" />
 <!-- stats-badges:end -->
 </div>
 
