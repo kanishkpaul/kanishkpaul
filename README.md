@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Followers-15-111827?style=for-the-badge&logo=github" alt="15 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-17-0f172a?style=for-the-badge&logo=github" alt="17 public repositories" />
+    <img src="https://img.shields.io/badge/Public%20Repos-18-0f172a?style=for-the-badge&logo=github" alt="18 public repositories" />
   </a>
 <!-- profile-badges:end -->
   <a href="https://kanishkpaul.com">
@@ -73,7 +73,7 @@ Independent research, reported honestly — negative results included. Method an
 | [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop | `TypeScript` &middot; `1 star` |
 | [reasontrace](https://github.com/kanishkpaul/reasontrace) | visual debugger for reasoning traces — turns agent logs into an inspectable graph with replay | `TypeScript` &middot; `1 star` |
 | [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for visual grounding and action-reliability research | `Python` &middot; `1 star` |
-| [stockfih](https://github.com/kanishkpaul/stockfih) | chess analysis pairing browser-side Stockfish with short natural-language coaching — "what idea did I miss?" | `TypeScript` &middot; `1 star` |
+| [stockfih](https://github.com/kanishkpaul/stockfih) | chess analysis pairing browser-side Stockfish with short natural-language coaching | `TypeScript` &middot; `1 star` |
 <!-- pinned-projects:end -->
 
 ---
@@ -85,7 +85,7 @@ Independent research, reported honestly — negative results included. Method an
   <img src="https://img.shields.io/badge/Stars%20Received-7-111827?style=for-the-badge&logo=github" alt="7 stars received" />
   <img src="https://img.shields.io/badge/Followers-15-0f172a?style=for-the-badge&logo=github" alt="15 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-9-1f2937?style=for-the-badge&logo=github" alt="9 following" />
-  <img src="https://img.shields.io/badge/Public%20Repos-17-020617?style=for-the-badge&logo=github" alt="17 public repositories" />
+  <img src="https://img.shields.io/badge/Public%20Repos-18-020617?style=for-the-badge&logo=github" alt="18 public repositories" />
 <!-- stats-badges:end -->
 </div>
 
