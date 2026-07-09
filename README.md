@@ -67,6 +67,19 @@ If that sounds intense, good. That is the point.
 | [casca](https://github.com/kanishkpaul/casca) | screenshot-grounded desktop agent scaffold for action reliability research | `Python` &middot; `1 star` |
 <!-- pinned-projects:end -->
 
+## research
+
+Independent research, reported honestly — including the negative results. Method
+and datasets on the flagship work are held back pending publication; each repo
+shows the design, real numbers, and runnable infrastructure. Write-ups at
+[kanishkpaul.com/research](https://kanishkpaul.com/research).
+
+| project | question | what's shown |
+| --- | --- | --- |
+| [register-obstruction](https://github.com/kanishkpaul/register-obstruction) | can honorific "untranslatability" be measured and predict MT failure? (Bn/Hi) | classifier interface + demo, methodology; method paper in prep |
+| [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) | can an agent induce a game's hidden rules and plan in its own head? | runnable eval substrate, `WorldModel` protocol, 25 passing tests |
+| [butterflygate](https://github.com/kanishkpaul/butterflygate) | a sub-quadratic O(n log n) replacement for self-attention | forward-pass benchmark + crossover figure; mechanism withheld |
+
 ## reach out
 
 If you are building around **reasoning**, **agents**, **agi**, **intelligence research**, or just weird ambitious things on the internet, I am always down to talk.
