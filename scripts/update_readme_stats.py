@@ -25,24 +25,29 @@ class FeaturedRepo:
 
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
-        name="stockfih",
-        description="chess analysis with stockfish plus language-model coaching",
-        language="TypeScript",
+        name="sefai",
+        description="a safe environment for AI — Rust CLI for running local GGUF models via llama.cpp bindings",
+        language="Rust",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="terminal-first browser agent with traces, safety gates, and eval scaffolding",
+        description="terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="visual debugger for reasoning traces, replay, and inspection",
+        description="visual debugger for reasoning traces — turns agent logs into an inspectable graph with replay",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="casca",
-        description="screenshot-grounded desktop agent scaffold for action reliability research",
+        description="screenshot-grounded desktop agent scaffold for visual grounding and action-reliability research",
         language="Python",
+    ),
+    FeaturedRepo(
+        name="stockfih",
+        description="chess analysis pairing browser-side Stockfish with short natural-language coaching",
+        language="TypeScript",
     ),
 )
 
