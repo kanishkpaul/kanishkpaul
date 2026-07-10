@@ -14,6 +14,7 @@ from urllib.request import Request, urlopen
 REPO_OWNER = "kanishkpaul"
 README_PATH = Path(__file__).resolve().parents[1] / "README.md"
 API_ROOT = "https://api.github.com"
+GRAPHQL_URL = f"{API_ROOT}/graphql"
 
 
 @dataclass(frozen=True)
@@ -21,6 +22,14 @@ class FeaturedRepo:
     name: str
     description: str
     language: str
+
+
+@dataclass(frozen=True)
+class CommitStats:
+    additions: int = 0
+    deletions: int = 0
+    commits: int = 0
+    repositories: int = 0
 
 
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
@@ -52,18 +61,45 @@ FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
 )
 
 
-def github_request(path: str) -> dict | list:
-    token = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
+def auth_token() -> str | None:
+    return (
+        os.getenv("PROFILE_STATS_TOKEN")
+        or os.getenv("GH_TOKEN")
+        or os.getenv("GITHUB_TOKEN")
+    )
+
+
+def request_headers(token: str | None) -> dict[str, str]:
     headers = {
         "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "kanishkpaul-readme-stats",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
+    return headers
 
-    request = Request(f"{API_ROOT}{path}", headers=headers)
+
+def github_request(path: str, token: str | None = None) -> dict | list:
+    request = Request(f"{API_ROOT}{path}", headers=request_headers(token or auth_token()))
     with urlopen(request) as response:
         return json.load(response)
+
+
+def graphql_request(query: str, variables: dict, token: str) -> dict:
+    payload = json.dumps({"query": query, "variables": variables}).encode("utf-8")
+    headers = request_headers(token)
+    headers["Content-Type"] = "application/json"
+    request = Request(GRAPHQL_URL, data=payload, headers=headers, method="POST")
+    with urlopen(request) as response:
+        result = json.load(response)
+
+    if not isinstance(result, dict) or result.get("errors"):
+        raise RuntimeError("GitHub GraphQL query failed.")
+    data = result.get("data")
+    if not isinstance(data, dict):
+        raise TypeError("Expected a data object from GitHub GraphQL.")
+    return data
 
 
 def fetch_user() -> dict:
@@ -73,25 +109,169 @@ def fetch_user() -> dict:
     return data
 
 
-def fetch_owned_repos() -> list[dict]:
+def token_belongs_to_owner(token: str | None) -> bool:
+    if not token:
+        return False
+    try:
+        data = github_request("/user", token)
+    except HTTPError:
+        return False
+    return isinstance(data, dict) and str(data.get("login", "")).lower() == REPO_OWNER
+
+
+def fetch_owned_repos(token: str | None) -> list[dict]:
+    owner_token = token_belongs_to_owner(token)
     page = 1
     repos: list[dict] = []
     while True:
-        data = github_request(
-            f"/users/{REPO_OWNER}/repos?per_page=100&type=owner&sort=updated&page={page}"
-        )
+        if owner_token:
+            path = (
+                "/user/repos?per_page=100&affiliation=owner&visibility=all"
+                f"&sort=updated&page={page}"
+            )
+        else:
+            path = (
+                f"/users/{REPO_OWNER}/repos?per_page=100&type=owner"
+                f"&sort=updated&page={page}"
+            )
+        data = github_request(path, token)
         if not isinstance(data, list):
             raise TypeError("Expected a list of repositories from GitHub.")
         if not data:
-            return repos
+            break
         repos.extend(data)
         page += 1
 
+    return [
+        repo
+        for repo in repos
+        if not repo.get("fork")
+        and str(repo.get("owner", {}).get("login", "")).lower() == REPO_OWNER
+    ]
 
-def build_badge(label: str, value: int, color: str, alt_text: str) -> str:
+
+def fetch_author_id(token: str) -> str:
+    query = """
+    query($login: String!) {
+      user(login: $login) { id }
+    }
+    """
+    data = graphql_request(query, {"login": REPO_OWNER}, token)
+    user = data.get("user")
+    if not isinstance(user, dict) or not user.get("id"):
+        raise RuntimeError("Could not resolve the GitHub user for commit attribution.")
+    return str(user["id"])
+
+
+def fetch_repo_commit_stats(repo: dict, author_id: str, token: str) -> CommitStats:
+    query = """
+    query(
+      $owner: String!
+      $name: String!
+      $cursor: String
+      $author: CommitAuthor!
+    ) {
+      repository(owner: $owner, name: $name) {
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history(first: 100, after: $cursor, author: $author) {
+                nodes {
+                  additions
+                  deletions
+                  parents(first: 1) { totalCount }
+                }
+                pageInfo { hasNextPage endCursor }
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    cursor: str | None = None
+    additions = 0
+    deletions = 0
+    commits = 0
+
+    while True:
+        data = graphql_request(
+            query,
+            {
+                "owner": REPO_OWNER,
+                "name": str(repo["name"]),
+                "cursor": cursor,
+                "author": {"id": author_id},
+            },
+            token,
+        )
+        repository = data.get("repository")
+        if not isinstance(repository, dict):
+            raise RuntimeError("A repository could not be read while counting commits.")
+        default_ref = repository.get("defaultBranchRef")
+        if not isinstance(default_ref, dict):
+            return CommitStats()
+        target = default_ref.get("target")
+        if not isinstance(target, dict):
+            return CommitStats()
+        history = target.get("history")
+        if not isinstance(history, dict):
+            return CommitStats()
+
+        nodes = history.get("nodes") or []
+        for commit in nodes:
+            if not isinstance(commit, dict):
+                continue
+            parents = commit.get("parents") or {}
+            if int(parents.get("totalCount", 0)) > 1:
+                continue
+            additions += int(commit.get("additions", 0))
+            deletions += int(commit.get("deletions", 0))
+            commits += 1
+
+        page_info = history.get("pageInfo") or {}
+        if not page_info.get("hasNextPage"):
+            break
+        cursor = page_info.get("endCursor")
+        if not cursor:
+            raise RuntimeError("GitHub returned an invalid commit-history cursor.")
+
+    return CommitStats(additions=additions, deletions=deletions, commits=commits)
+
+
+def fetch_commit_stats(repos: list[dict], token: str | None) -> CommitStats:
+    if not token:
+        return CommitStats()
+
+    author_id = fetch_author_id(token)
+    additions = 0
+    deletions = 0
+    commits = 0
+    repositories = 0
+
+    for repo in repos:
+        if not repo.get("default_branch"):
+            continue
+        stats = fetch_repo_commit_stats(repo, author_id, token)
+        additions += stats.additions
+        deletions += stats.deletions
+        commits += stats.commits
+        if stats.commits:
+            repositories += 1
+
+    return CommitStats(
+        additions=additions,
+        deletions=deletions,
+        commits=commits,
+        repositories=repositories,
+    )
+
+
+def build_badge(label: str, value: int | str, color: str, alt_text: str) -> str:
     encoded_label = quote(label, safe="")
+    encoded_value = quote(str(value), safe="")
     return (
-        f'<img src="https://img.shields.io/badge/{encoded_label}-{value}-{color}'
+        f'<img src="https://img.shields.io/badge/{encoded_label}-{encoded_value}-{color}'
         f'?style=for-the-badge&logo=github" alt="{alt_text}" />'
     )
 
@@ -129,12 +309,18 @@ def render_profile_badges(user: dict) -> str:
     )
 
 
-def render_stats_badges(user: dict, total_stars: int) -> str:
+def render_stats_badges(user: dict, total_stars: int, commit_stats: CommitStats) -> str:
     followers = int(user["followers"])
     following = int(user["following"])
     public_repos = int(user["public_repos"])
+    additions = f"{commit_stats.additions:,}"
+    deletions = f"{commit_stats.deletions:,}"
+    commits = f"{commit_stats.commits:,}"
     return "\n".join(
         [
+            f'  {build_badge("Lines Committed", additions, "16a34a", f"{additions} cumulative lines added")}',
+            f'  {build_badge("Lines Removed", deletions, "991b1b", f"{deletions} cumulative lines removed")}',
+            f'  {build_badge("Commits Counted", commits, "1d4ed8", f"{commits} authored non-merge commits counted")}',
             f'  {build_badge("Stars Received", total_stars, "111827", f"{total_stars} stars received")}',
             f'  {build_badge("Followers", followers, "0f172a", f"{followers} GitHub followers")}',
             f'  {build_badge("Following", following, "1f2937", f"{following} following")}',
@@ -165,21 +351,37 @@ def render_featured_projects(repo_lookup: dict[str, dict]) -> str:
 
 
 def main() -> int:
+    token = auth_token()
     try:
         user = fetch_user()
-        repos = fetch_owned_repos()
+        repos = fetch_owned_repos(token)
+        commit_stats = fetch_commit_stats(repos, token)
     except HTTPError as error:
         sys.stderr.write(f"GitHub API request failed: {error.code} {error.reason}\n")
         return 1
+    except (KeyError, TypeError, RuntimeError, ValueError) as error:
+        sys.stderr.write(f"README stats refresh failed: {error}\n")
+        return 1
 
     repo_lookup = {repo["name"]: repo for repo in repos}
-    total_stars = sum(int(repo["stargazers_count"]) for repo in repos if not repo.get("fork"))
+    total_stars = sum(int(repo["stargazers_count"]) for repo in repos)
 
     content = README_PATH.read_text(encoding="utf-8")
     content = replace_section(content, "profile-badges", render_profile_badges(user))
-    content = replace_section(content, "stats-badges", render_stats_badges(user, total_stars))
+    content = replace_section(
+        content,
+        "stats-badges",
+        render_stats_badges(user, total_stars, commit_stats),
+    )
     content = replace_section(content, "pinned-projects", render_featured_projects(repo_lookup))
     README_PATH.write_text(content, encoding="utf-8")
+
+    visibility = "public and private" if token_belongs_to_owner(token) else "public"
+    print(
+        f"Counted {commit_stats.commits:,} commits and "
+        f"{commit_stats.additions:,} added lines across "
+        f"{commit_stats.repositories} {visibility} repositories."
+    )
     return 0
 
 
