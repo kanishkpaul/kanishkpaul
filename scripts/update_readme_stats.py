@@ -309,18 +309,24 @@ def render_profile_badges(user: dict) -> str:
     )
 
 
-def render_stats_badges(user: dict, total_stars: int, commit_stats: CommitStats) -> str:
+def render_stats_badges(
+    user: dict,
+    total_stars: int,
+    commit_stats: CommitStats,
+    includes_private: bool,
+) -> str:
     followers = int(user["followers"])
     following = int(user["following"])
     public_repos = int(user["public_repos"])
     additions = f"{commit_stats.additions:,}"
     deletions = f"{commit_stats.deletions:,}"
     commits = f"{commit_stats.commits:,}"
+    scope = "" if includes_private else "Public "
     return "\n".join(
         [
-            f'  {build_badge("Lines Committed", additions, "16a34a", f"{additions} cumulative lines added")}',
-            f'  {build_badge("Lines Removed", deletions, "991b1b", f"{deletions} cumulative lines removed")}',
-            f'  {build_badge("Commits Counted", commits, "1d4ed8", f"{commits} authored non-merge commits counted")}',
+            f'  {build_badge(f"{scope}Lines Committed", additions, "16a34a", f"{additions} cumulative lines added")}',
+            f'  {build_badge(f"{scope}Lines Removed", deletions, "991b1b", f"{deletions} cumulative lines removed")}',
+            f'  {build_badge(f"{scope}Commits Counted", commits, "1d4ed8", f"{commits} authored non-merge commits counted")}',
             f'  {build_badge("Stars Received", total_stars, "111827", f"{total_stars} stars received")}',
             f'  {build_badge("Followers", followers, "0f172a", f"{followers} GitHub followers")}',
             f'  {build_badge("Following", following, "1f2937", f"{following} following")}',
@@ -352,6 +358,7 @@ def render_featured_projects(repo_lookup: dict[str, dict]) -> str:
 
 def main() -> int:
     token = auth_token()
+    includes_private = token_belongs_to_owner(token)
     try:
         user = fetch_user()
         repos = fetch_owned_repos(token)
@@ -371,12 +378,12 @@ def main() -> int:
     content = replace_section(
         content,
         "stats-badges",
-        render_stats_badges(user, total_stars, commit_stats),
+        render_stats_badges(user, total_stars, commit_stats, includes_private),
     )
     content = replace_section(content, "pinned-projects", render_featured_projects(repo_lookup))
     README_PATH.write_text(content, encoding="utf-8")
 
-    visibility = "public and private" if token_belongs_to_owner(token) else "public"
+    visibility = "public and private" if includes_private else "public"
     print(
         f"Counted {commit_stats.commits:,} commits and "
         f"{commit_stats.additions:,} added lines across "
