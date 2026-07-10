@@ -9,7 +9,7 @@
 <p>
   <!-- profile-badges:start -->
   <a href="https://github.com/kanishkpaul">
-    <img src="https://img.shields.io/badge/Followers-15-111827?style=for-the-badge&logo=github" alt="15 GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-16-111827?style=for-the-badge&logo=github" alt="16 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Repos-18-0f172a?style=for-the-badge&logo=github" alt="18 public repositories" />
@@ -82,8 +82,8 @@ Independent research, reported honestly — negative results included. Method an
 
 <div align="center">
   <!-- stats-badges:start -->
-  <img src="https://img.shields.io/badge/Stars%20Received-7-111827?style=for-the-badge&logo=github" alt="7 stars received" />
-  <img src="https://img.shields.io/badge/Followers-15-0f172a?style=for-the-badge&logo=github" alt="15 GitHub followers" />
+  <img src="https://img.shields.io/badge/Stars%20Received-9-111827?style=for-the-badge&logo=github" alt="9 stars received" />
+  <img src="https://img.shields.io/badge/Followers-16-0f172a?style=for-the-badge&logo=github" alt="16 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-9-1f2937?style=for-the-badge&logo=github" alt="9 following" />
   <img src="https://img.shields.io/badge/Public%20Repos-18-020617?style=for-the-badge&logo=github" alt="18 public repositories" />
 <!-- stats-badges:end -->
