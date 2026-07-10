@@ -2,18 +2,28 @@ name: Update README Stats
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - refresh-profile-stats
   push:
     branches:
       - main
   schedule:
-    - cron: "17 3 * * *"
+    # GitHub's shortest supported interval. Scheduled runs can still be delayed.
+    - cron: "*/5 * * * *"
+
+concurrency:
+  group: update-readme-stats
+  cancel-in-progress: true
 
 permissions:
   contents: write
 
 jobs:
   refresh-readme:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Check out repository
@@ -27,6 +37,7 @@ jobs:
       - name: Refresh README stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
         run: python scripts/update_readme_stats.py
 
       - name: Commit README changes
