@@ -9,7 +9,7 @@
 <p>
   <!-- profile-badges:start -->
   <a href="https://github.com/kanishkpaul">
-    <img src="https://img.shields.io/badge/Followers-17-111827?style=for-the-badge&logo=github" alt="17 GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-18-111827?style=for-the-badge&logo=github" alt="18 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Repos-18-0f172a?style=for-the-badge&logo=github" alt="18 public repositories" />
@@ -86,7 +86,7 @@ Independent research, reported honestly — negative results included. Method an
   <img src="https://img.shields.io/badge/Lines%20Removed-54%2C910-991b1b?style=for-the-badge&logo=github" alt="54,910 cumulative lines removed" />
   <img src="https://img.shields.io/badge/Commits%20Counted-271-1d4ed8?style=for-the-badge&logo=github" alt="271 authored non-merge commits counted" />
   <img src="https://img.shields.io/badge/Stars%20Received-14-111827?style=for-the-badge&logo=github" alt="14 stars received" />
-  <img src="https://img.shields.io/badge/Followers-17-0f172a?style=for-the-badge&logo=github" alt="17 GitHub followers" />
+  <img src="https://img.shields.io/badge/Followers-18-0f172a?style=for-the-badge&logo=github" alt="18 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
   <img src="https://img.shields.io/badge/Public%20Repos-18-020617?style=for-the-badge&logo=github" alt="18 public repositories" />
 <!-- stats-badges:end -->
