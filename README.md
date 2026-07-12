@@ -9,7 +9,7 @@
 <p>
   <!-- profile-badges:start -->
   <a href="https://github.com/kanishkpaul">
-    <img src="https://img.shields.io/badge/Followers-18-111827?style=for-the-badge&logo=github" alt="18 GitHub followers" />
+    <img src="https://img.shields.io/badge/Followers-19-111827?style=for-the-badge&logo=github" alt="19 GitHub followers" />
   </a>
   <a href="https://github.com/kanishkpaul?tab=repositories">
     <img src="https://img.shields.io/badge/Public%20Repos-18-0f172a?style=for-the-badge&logo=github" alt="18 public repositories" />
@@ -82,11 +82,11 @@ Independent research, reported honestly — negative results included. Method an
 
 <div align="center">
   <!-- stats-badges:start -->
-  <img src="https://img.shields.io/badge/Lines%20Committed-5%2C067%2C595-16a34a?style=for-the-badge&logo=github" alt="5,067,595 cumulative lines added" />
-  <img src="https://img.shields.io/badge/Lines%20Removed-57%2C400-991b1b?style=for-the-badge&logo=github" alt="57,400 cumulative lines removed" />
-  <img src="https://img.shields.io/badge/Commits%20Counted-276-1d4ed8?style=for-the-badge&logo=github" alt="276 authored non-merge commits counted" />
+  <img src="https://img.shields.io/badge/Lines%20Committed-5%2C067%2C729-16a34a?style=for-the-badge&logo=github" alt="5,067,729 cumulative lines added" />
+  <img src="https://img.shields.io/badge/Lines%20Removed-57%2C403-991b1b?style=for-the-badge&logo=github" alt="57,403 cumulative lines removed" />
+  <img src="https://img.shields.io/badge/Commits%20Counted-278-1d4ed8?style=for-the-badge&logo=github" alt="278 authored non-merge commits counted" />
   <img src="https://img.shields.io/badge/Stars%20Received-14-111827?style=for-the-badge&logo=github" alt="14 stars received" />
-  <img src="https://img.shields.io/badge/Followers-18-0f172a?style=for-the-badge&logo=github" alt="18 GitHub followers" />
+  <img src="https://img.shields.io/badge/Followers-19-0f172a?style=for-the-badge&logo=github" alt="19 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-10-1f2937?style=for-the-badge&logo=github" alt="10 following" />
   <img src="https://img.shields.io/badge/Public%20Repos-18-020617?style=for-the-badge&logo=github" alt="18 public repositories" />
 <!-- stats-badges:end -->
