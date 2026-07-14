@@ -58,7 +58,6 @@ Independent research, reported honestly — negative results included. Method an
 | [register-obstruction](https://github.com/kanishkpaul/register-obstruction) | Quantifying **untranslatability** as a cohomological-style obstruction: honorific register (formal/familiar/intimate) survives Bengali↔Hindi but collapses through an English pivot. Measured per item via the Abramsky–Brandenburger **contextual fraction** (LP), then correlated with real MT failure. | classifier interface + demo, methodology; `method paper in prep` |
 | [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) | **World-model agents for ARC-AGI-3** — can an agent induce a game's hidden rules and plan in its own head? Online rule induction, uncertainty probing, planning. | runnable eval substrate, `WorldModel` protocol, 25 passing tests |
 | [butterflygate](https://github.com/kanishkpaul/butterflygate) | A **sub-quadratic O(n log n)** replacement for self-attention. | forward-pass benchmark + crossover figure; mechanism withheld |
-| [parameter-golf](https://github.com/kanishkpaul/parameter-golf) | Train the smallest capable language model that fits in **16 MB** — a constraint-as-lens study in where parameters actually go. | `open challenge` |
 
 > More lives in the lab and isn't public yet — **category-theoretic AI targeting ARC-AGI-3**, **internal world models**, and **context-aware causal cognitive control**. Private until there's a paper to point to.
 
