@@ -81,9 +81,9 @@ Independent research, reported honestly — negative results included. Method an
 
 <div align="center">
   <!-- stats-badges:start -->
-  <img src="https://img.shields.io/badge/Lines%20Committed-5%2C092%2C993-16a34a?style=for-the-badge&logo=github" alt="5,092,993 cumulative lines added" />
-  <img src="https://img.shields.io/badge/Lines%20Removed-58%2C162-991b1b?style=for-the-badge&logo=github" alt="58,162 cumulative lines removed" />
-  <img src="https://img.shields.io/badge/Commits%20Counted-312-1d4ed8?style=for-the-badge&logo=github" alt="312 authored non-merge commits counted" />
+  <img src="https://img.shields.io/badge/Lines%20Committed-5%2C489%2C173-16a34a?style=for-the-badge&logo=github" alt="5,489,173 cumulative lines added" />
+  <img src="https://img.shields.io/badge/Lines%20Removed-60%2C884-991b1b?style=for-the-badge&logo=github" alt="60,884 cumulative lines removed" />
+  <img src="https://img.shields.io/badge/Commits%20Counted-481-1d4ed8?style=for-the-badge&logo=github" alt="481 authored non-merge commits counted" />
   <img src="https://img.shields.io/badge/Stars%20Received-14-111827?style=for-the-badge&logo=github" alt="14 stars received" />
   <img src="https://img.shields.io/badge/Followers-18-0f172a?style=for-the-badge&logo=github" alt="18 GitHub followers" />
   <img src="https://img.shields.io/badge/Following-6-1f2937?style=for-the-badge&logo=github" alt="6 following" />
