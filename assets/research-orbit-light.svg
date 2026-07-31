@@ -1,33 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
-  <title id="title">Rotating research orbit</title>
-  <desc id="desc">An original animated glyph of orbiting evidence nodes around a central K.</desc>
-  <defs>
-    <radialGradient id="halo"><stop stop-color="#087f6d" stop-opacity=".14"/><stop offset="1" stop-color="#087f6d" stop-opacity="0"/></radialGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  </defs>
-  <style>
-    .outer { transform-origin: 80px 80px; animation: spin 13s linear infinite; }
-    .inner { transform-origin: 80px 80px; animation: spin-back 8s linear infinite; }
-    .pulse { transform-origin: 80px 80px; animation: pulse 2.8s ease-in-out infinite; }
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes spin-back { to { transform: rotate(-360deg); } }
-    @keyframes pulse { 0%, 100% { transform: scale(.93); opacity: .75; } 50% { transform: scale(1.08); opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .outer, .inner, .pulse { animation: none; } }
-  </style>
-  <circle cx="80" cy="80" r="76" fill="url(#halo)"/>
-  <g class="outer" filter="url(#glow)">
-    <circle cx="80" cy="80" r="57" fill="none" stroke="#087f6d" stroke-width="2" stroke-dasharray="5 9"/>
-    <circle cx="80" cy="23" r="5" fill="#0969da"/>
-    <circle cx="129" cy="109" r="5" fill="#087f6d"/>
-    <circle cx="31" cy="109" r="5" fill="#8250df"/>
-  </g>
-  <g class="inner">
-    <ellipse cx="80" cy="80" rx="42" ry="18" fill="none" stroke="#0969da" stroke-width="1.5" opacity=".65"/>
-    <circle cx="122" cy="80" r="3.5" fill="#1f2328"/>
-  </g>
-  <g class="pulse">
-    <path d="M80 52L105 80 80 108 55 80Z" fill="#ffffff" stroke="#087f6d" stroke-width="2"/>
-    <text x="80" y="88" text-anchor="middle" font-size="24" font-weight="700" fill="#1f2328">K</text>
-  </g>
+  <title id="title">My rotating research sigil</title>
+  <desc id="desc">A rotating graph surrounds my geometric K monogram.</desc>
+  <defs><linearGradient id="seal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#edf8f5"/></linearGradient></defs>
+  <style>.ring{transform-origin:80px 80px;animation:ring 24s linear infinite}.graph{transform-origin:80px 80px;animation:graph 18s linear infinite}.counter{transform-origin:80px 80px;animation:counter 11s linear infinite}.breathe{animation:breathe 3.6s ease-in-out infinite}@keyframes ring{to{transform:rotate(360deg)}}@keyframes graph{to{transform:rotate(-360deg)}}@keyframes counter{to{transform:rotate(360deg)}}@keyframes breathe{0%,100%{opacity:.7}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.ring,.graph,.counter,.breathe{animation:none}}</style>
+  <g class="ring"><circle cx="80" cy="80" r="62" fill="none" stroke="#c5d0d9" stroke-width="1" stroke-dasharray="2 8"/><path d="M80 14A66 66 0 0 1 137 47" fill="none" stroke="#0969da" stroke-width="2" stroke-linecap="round"/><path d="M137 113A66 66 0 0 1 80 146" fill="none" stroke="#8250df" stroke-width="2" stroke-linecap="round"/><path d="M23 113A66 66 0 0 1 23 47" fill="none" stroke="#087f6d" stroke-width="2" stroke-linecap="round"/></g>
+  <g class="graph"><path d="M80 25L132 116H28Z" fill="none" stroke="#93a4b1" stroke-width="1.4"/><circle cx="80" cy="25" r="5" fill="#0969da"/><circle cx="132" cy="116" r="5" fill="#8250df"/><circle cx="28" cy="116" r="5" fill="#087f6d"/></g>
+  <g class="counter" opacity=".8"><path d="M80 39A41 41 0 0 1 119 67M119 93A41 41 0 0 1 80 121M41 93A41 41 0 0 1 41 67" fill="none" stroke="#68727d" stroke-width="1.2" stroke-linecap="round"/><circle cx="119" cy="67" r="2.6" fill="#1f2328"/></g>
+  <g class="breathe"><path d="M80 49L107 64V96L80 111 53 96V64Z" fill="url(#seal)" stroke="#087f6d" stroke-width="1.8"/><path d="M69 64V96M69 81L91 64M77 75L94 96" fill="none" stroke="#164f44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="69" cy="81" r="3" fill="#087f6d"/></g>
 </svg>

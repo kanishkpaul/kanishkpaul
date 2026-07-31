@@ -1,33 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
-  <title id="title">Rotating research orbit</title>
-  <desc id="desc">An original animated glyph of orbiting evidence nodes around a central K.</desc>
+  <title id="title">My rotating research sigil</title>
+  <desc id="desc">A rotating graph surrounds my geometric K monogram.</desc>
   <defs>
-    <radialGradient id="halo"><stop stop-color="#39d0b4" stop-opacity=".2"/><stop offset="1" stop-color="#39d0b4" stop-opacity="0"/></radialGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="seal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#13222a"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
   </defs>
   <style>
-    .outer { transform-origin: 80px 80px; animation: spin 13s linear infinite; }
-    .inner { transform-origin: 80px 80px; animation: spin-back 8s linear infinite; }
-    .pulse { transform-origin: 80px 80px; animation: pulse 2.8s ease-in-out infinite; }
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes spin-back { to { transform: rotate(-360deg); } }
-    @keyframes pulse { 0%, 100% { transform: scale(.93); opacity: .7; } 50% { transform: scale(1.08); opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .outer, .inner, .pulse { animation: none; } }
+    .ring{transform-origin:80px 80px;animation:ring 24s linear infinite}.graph{transform-origin:80px 80px;animation:graph 18s linear infinite}.counter{transform-origin:80px 80px;animation:counter 11s linear infinite}.breathe{animation:breathe 3.6s ease-in-out infinite}@keyframes ring{to{transform:rotate(360deg)}}@keyframes graph{to{transform:rotate(-360deg)}}@keyframes counter{to{transform:rotate(360deg)}}@keyframes breathe{0%,100%{opacity:.65}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.ring,.graph,.counter,.breathe{animation:none}}
   </style>
-  <circle cx="80" cy="80" r="76" fill="url(#halo)"/>
-  <g class="outer" filter="url(#glow)">
-    <circle cx="80" cy="80" r="57" fill="none" stroke="#39d0b4" stroke-width="2" stroke-dasharray="5 9"/>
-    <circle cx="80" cy="23" r="5" fill="#58a6ff"/>
-    <circle cx="129" cy="109" r="5" fill="#39d0b4"/>
-    <circle cx="31" cy="109" r="5" fill="#d2a8ff"/>
+  <g class="ring">
+    <circle cx="80" cy="80" r="62" fill="none" stroke="#314453" stroke-width="1" stroke-dasharray="2 8"/>
+    <path d="M80 14A66 66 0 0 1 137 47" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M137 113A66 66 0 0 1 80 146" fill="none" stroke="#bc8cff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M23 113A66 66 0 0 1 23 47" fill="none" stroke="#3dd6bd" stroke-width="2" stroke-linecap="round"/>
   </g>
-  <g class="inner">
-    <ellipse cx="80" cy="80" rx="42" ry="18" fill="none" stroke="#58a6ff" stroke-width="1.5" opacity=".7"/>
-    <circle cx="122" cy="80" r="3.5" fill="#c9d1d9"/>
+  <g class="graph">
+    <path d="M80 25L132 116H28Z" fill="none" stroke="#3a5061" stroke-width="1.4"/>
+    <circle cx="80" cy="25" r="5" fill="#79c0ff"/>
+    <circle cx="132" cy="116" r="5" fill="#bc8cff"/>
+    <circle cx="28" cy="116" r="5" fill="#3dd6bd"/>
   </g>
-  <g class="pulse">
-    <path d="M80 52L105 80 80 108 55 80Z" fill="#0d1117" stroke="#39d0b4" stroke-width="2"/>
-    <text x="80" y="88" text-anchor="middle" font-size="24" font-weight="700" fill="#c9d1d9">K</text>
+  <g class="counter" opacity=".85">
+    <path d="M80 39A41 41 0 0 1 119 67M119 93A41 41 0 0 1 80 121M41 93A41 41 0 0 1 41 67" fill="none" stroke="#6f8290" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="119" cy="67" r="2.6" fill="#c9d1d9"/>
+  </g>
+  <g class="breathe">
+    <path d="M80 49L107 64V96L80 111 53 96V64Z" fill="url(#seal)" stroke="#3dd6bd" stroke-width="1.8"/>
+    <path d="M69 64V96M69 81L91 64M77 75L94 96" fill="none" stroke="#d7fff7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="69" cy="81" r="3" fill="#3dd6bd"/>
   </g>
 </svg>
