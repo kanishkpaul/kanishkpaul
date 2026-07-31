@@ -1,20 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
-  <title id="title">Kanishk Paul research terminal</title>
-  <desc id="desc">An animated terminal dashboard whose ASCII symbol cycles between a letter K, a reasoning graph, and an agent glyph.</desc>
+  <title id="title">My research terminal</title>
+  <desc id="desc">I work across reasoning, agents, language, and local inference. Three animated sigils represent identity, composition, and agency.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="0.55" stop-color="#101823"/>
-      <stop offset="1" stop-color="#0b1219"/>
+      <stop offset="0.56" stop-color="#101822"/>
+      <stop offset="1" stop-color="#0a1118"/>
     </linearGradient>
     <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#39d0b4"/>
-      <stop offset="1" stop-color="#58a6ff"/>
+      <stop stop-color="#3dd6bd"/>
+      <stop offset="0.55" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <radialGradient id="node" cx="35%" cy="30%" r="75%">
+      <stop stop-color="#eafff9"/>
+      <stop offset="0.35" stop-color="#69ead0"/>
+      <stop offset="1" stop-color="#15917e"/>
+    </radialGradient>
+    <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L8 4 0 8Z" fill="#61dec8"/>
+    </marker>
   </defs>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
@@ -22,28 +31,32 @@
     .copy { fill: #c9d1d9; }
     .key { fill: #79c0ff; font-weight: 700; }
     .value { fill: #d2e8de; }
-    .accent { fill: #39d0b4; }
-    .art { fill: #58e6c2; font-size: 26px; font-weight: 700; filter: url(#glow); }
+    .accent { fill: #3dd6bd; }
     .small { font-size: 14px; }
+    .micro { font-size: 11px; letter-spacing: .11em; }
     .body { font-size: 16px; }
+    .glyph-main { fill: none; stroke: #61dec8; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .glyph-secondary { fill: none; stroke: #79c0ff; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .glyph-ghost { fill: none; stroke: #334355; stroke-width: 1; }
+    .glyph-node { fill: url(#node); filter: url(#node-glow); }
+    .glyph-text { fill: #c9d1d9; font-size: 13px; font-weight: 700; }
+    .glyph-note { fill: #7d8998; font-size: 10px; letter-spacing: .08em; }
     .frame { opacity: 0; }
-    .frame-a { animation: frame-a 15s linear infinite; }
-    .frame-b { animation: frame-b 15s linear infinite; }
-    .frame-c { animation: frame-c 15s linear infinite; }
+    .frame-a { animation: frame-a 18s linear infinite; }
+    .frame-b { animation: frame-b 18s linear infinite; }
+    .frame-c { animation: frame-c 18s linear infinite; }
     .cursor { animation: blink 1.05s step-end infinite; }
-    .scanline { animation: scan 7s linear infinite; }
-    .glitch-a { animation: glitch-a 15s step-end infinite; }
-    .glitch-b { animation: glitch-b 15s step-end infinite; }
-    @keyframes frame-a { 0%, 30% { opacity: 1; } 33%, 97% { opacity: 0; } 100% { opacity: 1; } }
-    @keyframes frame-b { 0%, 30% { opacity: 0; } 33%, 63% { opacity: 1; } 66%, 100% { opacity: 0; } }
-    @keyframes frame-c { 0%, 63% { opacity: 0; } 66%, 97% { opacity: 1; } 100% { opacity: 0; } }
+    .scanline { animation: scan 8s linear infinite; }
+    .signal { animation: signal 18s ease-in-out infinite; }
+    @keyframes frame-a { 0%, 29% { opacity: 1; } 33%, 96% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes frame-b { 0%, 29% { opacity: 0; } 33%, 62% { opacity: 1; } 66%, 100% { opacity: 0; } }
+    @keyframes frame-c { 0%, 62% { opacity: 0; } 66%, 96% { opacity: 1; } 100% { opacity: 0; } }
     @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
     @keyframes scan { from { transform: translateY(-12px); } to { transform: translateY(472px); } }
-    @keyframes glitch-a { 0%, 30%, 33%, 64%, 67%, 98%, 100% { opacity: 0; } 31%, 32%, 65%, 66%, 99% { opacity: .5; } }
-    @keyframes glitch-b { 0%, 30%, 33%, 64%, 67%, 98%, 100% { opacity: 0; } 31%, 32%, 65%, 66%, 99% { opacity: .25; } }
+    @keyframes signal { 0%, 29%, 34%, 62%, 67%, 96%, 100% { opacity: 0; } 31%, 32%, 64%, 65%, 98% { opacity: .55; } }
     @media (prefers-reduced-motion: reduce) {
       .frame-a { opacity: 1; animation: none; }
-      .frame-b, .frame-c, .glitch-a, .glitch-b, .scanline { display: none; animation: none; }
+      .frame-b, .frame-c, .scanline, .signal { display: none; animation: none; }
       .cursor { animation: none; }
     }
   </style>
@@ -57,39 +70,60 @@
 
   <rect x="22" y="70" width="330" height="326" rx="10" fill="#0b1118" stroke="#263342"/>
   <path d="M22 110H352" stroke="#263342"/>
-  <text x="42" y="95" class="muted small">representation stream</text>
-  <circle cx="326" cy="90" r="4" fill="#39d0b4" class="cursor"/>
+  <text x="42" y="95" class="muted small">symbolic state</text>
+  <text x="326" y="95" text-anchor="end" class="accent micro cursor">LIVE</text>
 
-  <g class="frame frame-a art">
-    <text x="68" y="162">
-      <tspan x="68" dy="0">██╗  ██╗</tspan>
-      <tspan x="68" dy="34">██║ ██╔╝</tspan>
-      <tspan x="68" dy="34">█████╔╝ </tspan>
-      <tspan x="68" dy="34">██╔═██╗ </tspan>
-      <tspan x="68" dy="34">██║  ██╗</tspan>
-      <tspan x="68" dy="34">╚═╝  ╚═╝</tspan>
-    </text>
+  <g class="frame frame-a" transform="translate(60 126)">
+    <path class="glyph-ghost" d="M42 11L125 11 207 58 207 153 125 200 42 153Z" stroke-dasharray="3 8"/>
+    <path class="glyph-secondary" d="M23 49V24H48M227 49V24H202M23 162V187H48M227 162V187H202"/>
+    <path class="glyph-main" stroke-width="4" d="M82 43V168M82 106L166 42M112 84L174 169"/>
+    <path class="glyph-secondary" d="M92 43V92M92 120V168M99 105L173 50M119 92L165 160"/>
+    <circle class="glyph-node" cx="82" cy="43" r="5"/>
+    <circle class="glyph-node" cx="82" cy="106" r="6"/>
+    <circle class="glyph-node" cx="82" cy="168" r="5"/>
+    <circle cx="166" cy="42" r="5" fill="#79c0ff"/>
+    <circle cx="174" cy="169" r="5" fill="#bc8cff"/>
+    <text x="125" y="194" text-anchor="middle" class="glyph-note">KANISHK / 01</text>
   </g>
-  <g class="frame frame-b art">
-    <text x="52" y="162">
-      <tspan x="52" dy="0">       ○</tspan>
-      <tspan x="52" dy="34">      ╱│╲</tspan>
-      <tspan x="52" dy="34"> ○───●─┼─●───○</tspan>
-      <tspan x="52" dy="34">      ╲│╱</tspan>
-      <tspan x="52" dy="34">       ◇</tspan>
-      <tspan x="52" dy="34">   structure</tspan>
-    </text>
+
+  <g class="frame frame-b" transform="translate(58 126)">
+    <path class="glyph-ghost" d="M16 18H238V194H16Z" stroke-dasharray="2 9"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M62 52H183"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M202 70V145"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M183 164H62"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M43 145V70"/>
+    <path class="glyph-secondary" marker-end="url(#arrow)" stroke-dasharray="5 6" d="M57 65L188 151"/>
+    <circle cx="43" cy="52" r="19" fill="#0b1118" stroke="#61dec8" stroke-width="2"/>
+    <circle cx="202" cy="52" r="19" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
+    <circle cx="43" cy="164" r="19" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
+    <circle cx="202" cy="164" r="19" fill="#0b1118" stroke="#bc8cff" stroke-width="2"/>
+    <text x="43" y="57" text-anchor="middle" class="glyph-text">A</text>
+    <text x="202" y="57" text-anchor="middle" class="glyph-text">B</text>
+    <text x="43" y="169" text-anchor="middle" class="glyph-text">C</text>
+    <text x="202" y="169" text-anchor="middle" class="glyph-text">D</text>
+    <text x="122" y="44" text-anchor="middle" class="glyph-note">f</text>
+    <text x="212" y="111" class="glyph-note">g</text>
+    <text x="122" y="179" text-anchor="middle" class="glyph-note">h</text>
+    <text x="28" y="111" class="glyph-note">k</text>
+    <circle class="glyph-node" cx="123" cy="106" r="4"/>
   </g>
-  <g class="frame frame-c art">
-    <text x="48" y="162">
-      <tspan x="48" dy="0">    ╭───────╮</tspan>
-      <tspan x="48" dy="34"> ╭──┤  ◉ ◉  ├──╮</tspan>
-      <tspan x="48" dy="34"> │  ╰───┬───╯  │</tspan>
-      <tspan x="48" dy="34"> │  observe     │</tspan>
-      <tspan x="48" dy="34"> │  infer  plan │</tspan>
-      <tspan x="48" dy="34"> ╰──── act ─────╯</tspan>
-    </text>
+
+  <g class="frame frame-c" transform="translate(55 121)">
+    <path class="glyph-ghost" d="M126 8L239 190H13Z" stroke-dasharray="3 8"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M144 43C188 50 219 80 224 124"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M207 162C169 197 83 198 44 162"/>
+    <path class="glyph-main" marker-end="url(#arrow)" d="M28 124C34 80 65 50 109 43"/>
+    <circle cx="126" cy="35" r="24" fill="#0b1118" stroke="#61dec8" stroke-width="2"/>
+    <circle cx="224" cy="147" r="24" fill="#0b1118" stroke="#bc8cff" stroke-width="2"/>
+    <circle cx="28" cy="147" r="24" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
+    <text x="126" y="39" text-anchor="middle" class="glyph-text">OBS</text>
+    <text x="224" y="151" text-anchor="middle" class="glyph-text">ACT</text>
+    <text x="28" y="151" text-anchor="middle" class="glyph-text">MOD</text>
+    <path class="glyph-secondary" d="M94 112Q126 84 158 112Q126 140 94 112Z"/>
+    <circle class="glyph-node" cx="126" cy="112" r="6"/>
+    <text x="126" y="177" text-anchor="middle" class="glyph-note">CLOSE THE LOOP</text>
   </g>
+
   <text x="42" y="374" class="frame frame-a muted small">01 / identity</text>
   <text x="42" y="374" class="frame frame-b muted small">02 / composition</text>
   <text x="42" y="374" class="frame frame-c muted small">03 / agency</text>
@@ -97,36 +131,17 @@
   <rect x="382" y="70" width="596" height="326" rx="10" fill="#0b1118" stroke="#263342"/>
   <text x="410" y="105" class="copy body">kanishk@research</text>
   <rect x="410" y="120" width="536" height="2" rx="1" fill="url(#rule)"/>
+  <text x="410" y="158" class="key body">role</text><text x="520" y="158" class="muted body">··········</text><text x="650" y="158" class="value body">researcher + systems builder</text>
+  <text x="410" y="194" class="key body">focus</text><text x="520" y="194" class="muted body">·········</text><text x="650" y="194" class="value body">reasoning · agents · language</text>
+  <text x="410" y="230" class="key body">method</text><text x="520" y="230" class="muted body">········</text><text x="650" y="230" class="value body">structure before scale</text>
+  <text x="410" y="266" class="key body">loop</text><text x="520" y="266" class="muted body">··········</text><text x="650" y="266" class="value body">build → test → falsify → revise</text>
+  <text x="410" y="302" class="key body">stance</text><text x="520" y="302" class="muted body">·······</text><text x="650" y="302" class="value body">questions &gt; claims</text>
+  <text x="410" y="346" class="accent body">$</text><text x="432" y="346" class="copy body">cat note.txt</text>
+  <text x="410" y="374" class="muted small">I build to understand.</text>
+  <rect x="596" y="362" width="9" height="16" rx="1" fill="#3dd6bd" class="cursor"/>
 
-  <text x="410" y="158" class="key body">role</text>
-  <text x="520" y="158" class="muted body">··········</text>
-  <text x="650" y="158" class="value body">independent AI researcher</text>
-
-  <text x="410" y="194" class="key body">focus</text>
-  <text x="520" y="194" class="muted body">·········</text>
-  <text x="650" y="194" class="value body">reasoning · agents · language</text>
-
-  <text x="410" y="230" class="key body">method</text>
-  <text x="520" y="230" class="muted body">········</text>
-  <text x="650" y="230" class="value body">structure before scale</text>
-
-  <text x="410" y="266" class="key body">loop</text>
-  <text x="520" y="266" class="muted body">··········</text>
-  <text x="650" y="266" class="value body">build → test → falsify → revise</text>
-
-  <text x="410" y="302" class="key body">systems</text>
-  <text x="520" y="302" class="muted body">·······</text>
-  <text x="650" y="302" class="value body">world models · local inference</text>
-
-  <text x="410" y="346" class="accent body">$</text>
-  <text x="432" y="346" class="copy body">cat principles.txt</text>
-  <text x="410" y="374" class="muted small">evidence before rhetoric</text>
-  <rect x="606" y="362" width="9" height="16" rx="1" fill="#39d0b4" class="cursor"/>
-
-  <rect x="0" y="0" width="1000" height="2" fill="#39d0b4" opacity=".06" class="scanline"/>
-  <rect x="40" y="185" width="280" height="3" fill="#58a6ff" class="glitch-a"/>
-  <rect x="80" y="246" width="224" height="2" fill="#39d0b4" class="glitch-b"/>
-
-  <text x="22" y="430" class="muted small">[●] research loop active</text>
-  <text x="978" y="430" text-anchor="end" class="muted small">dark / motion-safe / evidence-first</text>
+  <rect x="0" y="0" width="1000" height="2" fill="#3dd6bd" opacity=".055" class="scanline"/>
+  <rect x="42" y="223" width="268" height="2" fill="url(#rule)" class="signal"/>
+  <text x="22" y="430" class="muted small">[●] currently building</text>
+  <text x="978" y="430" text-anchor="end" class="muted small">questions &gt; claims</text>
 </svg>

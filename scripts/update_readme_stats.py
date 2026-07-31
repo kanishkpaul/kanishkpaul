@@ -34,27 +34,27 @@ class CommitStats:
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
         name="sefai",
-        description="a safe environment for AI — Rust CLI for running local GGUF models via llama.cpp bindings",
+        description="My Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment",
         language="Rust",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
+        description="My terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="visual debugger for reasoning traces — turns agent logs into an inspectable graph with replay",
+        description="My visual debugger for turning agent logs into an inspectable graph with replay",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="casca",
-        description="screenshot-grounded desktop agent scaffold for visual grounding and action-reliability research",
+        description="My screenshot-grounded desktop-agent scaffold for visual grounding and action-reliability research",
         language="Python",
     ),
     FeaturedRepo(
         name="stockfih",
-        description="chess analysis pairing browser-side Stockfish with short natural-language coaching",
+        description="My chess-analysis interface pairing browser-side Stockfish with short natural-language coaching",
         language="TypeScript",
     ),
 )
@@ -325,7 +325,7 @@ def render_stats_badges(
 
 def render_featured_projects(repo_lookup: dict[str, dict]) -> str:
     lines = [
-        "| project | why it is cool | signals |",
+        "| project | what I built | signals |",
         "| --- | --- | --- |",
     ]
     for featured_repo in FEATURED_REPOS:
