@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Paul research terminal</title>
+  <desc id="desc">An animated terminal dashboard whose ASCII symbol cycles between a letter K, a reasoning graph, and an agent glyph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f5faf9"/>
+      <stop offset="1" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#087f6d"/>
+      <stop offset="1" stop-color="#0969da"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .muted { fill: #68727d; }
+    .copy { fill: #1f2328; }
+    .key { fill: #0969da; font-weight: 700; }
+    .value { fill: #183f36; }
+    .accent { fill: #087f6d; }
+    .art { fill: #087f6d; font-size: 26px; font-weight: 700; filter: url(#glow); }
+    .small { font-size: 14px; }
+    .body { font-size: 16px; }
+    .frame { opacity: 0; }
+    .frame-a { animation: frame-a 15s linear infinite; }
+    .frame-b { animation: frame-b 15s linear infinite; }
+    .frame-c { animation: frame-c 15s linear infinite; }
+    .cursor { animation: blink 1.05s step-end infinite; }
+    .scanline { animation: scan 7s linear infinite; }
+    .glitch-a { animation: glitch-a 15s step-end infinite; }
+    .glitch-b { animation: glitch-b 15s step-end infinite; }
+    @keyframes frame-a { 0%, 30% { opacity: 1; } 33%, 97% { opacity: 0; } 100% { opacity: 1; } }
+    @keyframes frame-b { 0%, 30% { opacity: 0; } 33%, 63% { opacity: 1; } 66%, 100% { opacity: 0; } }
+    @keyframes frame-c { 0%, 63% { opacity: 0; } 66%, 97% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @keyframes scan { from { transform: translateY(-12px); } to { transform: translateY(472px); } }
+    @keyframes glitch-a { 0%, 30%, 33%, 64%, 67%, 98%, 100% { opacity: 0; } 31%, 32%, 65%, 66%, 99% { opacity: .4; } }
+    @keyframes glitch-b { 0%, 30%, 33%, 64%, 67%, 98%, 100% { opacity: 0; } 31%, 32%, 65%, 66%, 99% { opacity: .2; } }
+    @media (prefers-reduced-motion: reduce) {
+      .frame-a { opacity: 1; animation: none; }
+      .frame-b, .frame-c, .glitch-a, .glitch-b, .scanline { display: none; animation: none; }
+      .cursor { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="998" height="458" rx="16" fill="url(#bg)" stroke="#d0d7de" stroke-width="2"/>
+  <path d="M1 48H999" stroke="#d0d7de"/>
+  <circle cx="25" cy="24" r="6" fill="#cf222e"/>
+  <circle cx="46" cy="24" r="6" fill="#bf8700"/>
+  <circle cx="67" cy="24" r="6" fill="#1a7f37"/>
+  <text x="500" y="29" text-anchor="middle" class="muted small">kanishk@research: ~/profile</text>
+
+  <rect x="22" y="70" width="330" height="326" rx="10" fill="#ffffff" stroke="#d8dee4"/>
+  <path d="M22 110H352" stroke="#d8dee4"/>
+  <text x="42" y="95" class="muted small">representation stream</text>
+  <circle cx="326" cy="90" r="4" fill="#087f6d" class="cursor"/>
+
+  <g class="frame frame-a art"><text x="68" y="162"><tspan x="68" dy="0">██╗  ██╗</tspan><tspan x="68" dy="34">██║ ██╔╝</tspan><tspan x="68" dy="34">█████╔╝ </tspan><tspan x="68" dy="34">██╔═██╗ </tspan><tspan x="68" dy="34">██║  ██╗</tspan><tspan x="68" dy="34">╚═╝  ╚═╝</tspan></text></g>
+  <g class="frame frame-b art"><text x="52" y="162"><tspan x="52" dy="0">       ○</tspan><tspan x="52" dy="34">      ╱│╲</tspan><tspan x="52" dy="34"> ○───●─┼─●───○</tspan><tspan x="52" dy="34">      ╲│╱</tspan><tspan x="52" dy="34">       ◇</tspan><tspan x="52" dy="34">   structure</tspan></text></g>
+  <g class="frame frame-c art"><text x="48" y="162"><tspan x="48" dy="0">    ╭───────╮</tspan><tspan x="48" dy="34"> ╭──┤  ◉ ◉  ├──╮</tspan><tspan x="48" dy="34"> │  ╰───┬───╯  │</tspan><tspan x="48" dy="34"> │  observe     │</tspan><tspan x="48" dy="34"> │  infer  plan │</tspan><tspan x="48" dy="34"> ╰──── act ─────╯</tspan></text></g>
+  <text x="42" y="374" class="frame frame-a muted small">01 / identity</text>
+  <text x="42" y="374" class="frame frame-b muted small">02 / composition</text>
+  <text x="42" y="374" class="frame frame-c muted small">03 / agency</text>
+
+  <rect x="382" y="70" width="596" height="326" rx="10" fill="#ffffff" stroke="#d8dee4"/>
+  <text x="410" y="105" class="copy body">kanishk@research</text>
+  <rect x="410" y="120" width="536" height="2" rx="1" fill="url(#rule)"/>
+  <text x="410" y="158" class="key body">role</text><text x="520" y="158" class="muted body">··········</text><text x="650" y="158" class="value body">independent AI researcher</text>
+  <text x="410" y="194" class="key body">focus</text><text x="520" y="194" class="muted body">·········</text><text x="650" y="194" class="value body">reasoning · agents · language</text>
+  <text x="410" y="230" class="key body">method</text><text x="520" y="230" class="muted body">········</text><text x="650" y="230" class="value body">structure before scale</text>
+  <text x="410" y="266" class="key body">loop</text><text x="520" y="266" class="muted body">··········</text><text x="650" y="266" class="value body">build → test → falsify → revise</text>
+  <text x="410" y="302" class="key body">systems</text><text x="520" y="302" class="muted body">·······</text><text x="650" y="302" class="value body">world models · local inference</text>
+  <text x="410" y="346" class="accent body">$</text><text x="432" y="346" class="copy body">cat principles.txt</text>
+  <text x="410" y="374" class="muted small">evidence before rhetoric</text>
+  <rect x="606" y="362" width="9" height="16" rx="1" fill="#087f6d" class="cursor"/>
+
+  <rect x="0" y="0" width="1000" height="2" fill="#087f6d" opacity=".05" class="scanline"/>
+  <rect x="40" y="185" width="280" height="3" fill="#0969da" class="glitch-a"/>
+  <rect x="80" y="246" width="224" height="2" fill="#087f6d" class="glitch-b"/>
+  <text x="22" y="430" class="muted small">[●] research loop active</text>
+  <text x="978" y="430" text-anchor="end" class="muted small">light / motion-safe / evidence-first</text>
+</svg>

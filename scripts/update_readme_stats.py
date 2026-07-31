@@ -7,7 +7,6 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 
@@ -267,15 +266,6 @@ def fetch_commit_stats(repos: list[dict], token: str | None) -> CommitStats:
     )
 
 
-def build_badge(label: str, value: int | str, color: str, alt_text: str) -> str:
-    encoded_label = quote(label, safe="")
-    encoded_value = quote(str(value), safe="")
-    return (
-        f'<img src="https://img.shields.io/badge/{encoded_label}-{encoded_value}-{color}'
-        f'?style=for-the-badge&logo=github" alt="{alt_text}" />'
-    )
-
-
 def pluralize_stars(stars: int) -> str:
     return "star" if stars == 1 else "stars"
 
@@ -297,15 +287,11 @@ def replace_section(content: str, marker: str, replacement: str) -> str:
 def render_profile_badges(user: dict) -> str:
     followers = int(user["followers"])
     public_repos = int(user["public_repos"])
-    return "\n".join(
-        [
-            '  <a href="https://github.com/kanishkpaul">',
-            f'    {build_badge("Followers", followers, "111827", f"{followers} GitHub followers")}',
-            "  </a>",
-            '  <a href="https://github.com/kanishkpaul?tab=repositories">',
-            f'    {build_badge("Public Repos", public_repos, "0f172a", f"{public_repos} public repositories")}',
-            "  </a>",
-        ]
+    return (
+        '  <a href="https://github.com/kanishkpaul">'
+        f'<code>{followers} followers</code></a> · '
+        '<a href="https://github.com/kanishkpaul?tab=repositories">'
+        f'<code>{public_repos} public repos</code></a>'
     )
 
 
@@ -321,16 +307,18 @@ def render_stats_badges(
     additions = f"{commit_stats.additions:,}"
     deletions = f"{commit_stats.deletions:,}"
     commits = f"{commit_stats.commits:,}"
-    scope = "" if includes_private else "Public "
+    scope_note = "" if includes_private else "  # public repositories only"
     return "\n".join(
         [
-            f'  {build_badge(f"{scope}Lines Committed", additions, "16a34a", f"{additions} cumulative lines added")}',
-            f'  {build_badge(f"{scope}Lines Removed", deletions, "991b1b", f"{deletions} cumulative lines removed")}',
-            f'  {build_badge(f"{scope}Commits Counted", commits, "1d4ed8", f"{commits} authored non-merge commits counted")}',
-            f'  {build_badge("Stars Received", total_stars, "111827", f"{total_stars} stars received")}',
-            f'  {build_badge("Followers", followers, "0f172a", f"{followers} GitHub followers")}',
-            f'  {build_badge("Following", following, "1f2937", f"{following} following")}',
-            f'  {build_badge("Public Repos", public_repos, "020617", f"{public_repos} public repositories")}',
+            "<pre>",
+            f"lines.added      {additions:>10}{scope_note}",
+            f"lines.removed    {deletions:>10}",
+            f"commits.counted  {commits:>10}",
+            f"stars.received   {total_stars:>10,}",
+            f"followers        {followers:>10,}",
+            f"following        {following:>10,}",
+            f"public.repos     {public_repos:>10,}",
+            "</pre>",
         ]
     )
 
