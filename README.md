@@ -55,7 +55,7 @@ Independent research, reported honestly — negative results included. Method an
 
 | project | the idea | what's shown |
 | --- | --- | --- |
-| [register-obstruction](https://github.com/kanishkpaul/register-obstruction) | Quantifying **untranslatability** as a cohomological-style obstruction: honorific register (formal/familiar/intimate) survives Bengali↔Hindi but collapses through an English pivot. Measured per item via the Abramsky–Brandenburger **contextual fraction** (LP), then correlated with real MT failure. | classifier interface + demo, methodology; `method paper in prep` |
+| [register-obstruction](https://github.com/kanishkpaul/register-obstruction) | Measuring honorific-register loss across direct and English-pivot Bengali→Hindi translation, with a preregistered test of a contextual-obstruction predictor. The predictor did not survive robustness analysis; the measurement result remains. | aggregate evidence + classifier demo + high-level negative verdict; `paper in prep` |
 | [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) | **World-model agents for ARC-AGI-3** — can an agent induce a game's hidden rules and plan in its own head? Online rule induction, uncertainty probing, planning. | runnable eval substrate, `WorldModel` protocol, 25 passing tests |
 | [butterflygate](https://github.com/kanishkpaul/butterflygate) | A **sub-quadratic O(n log n)** replacement for self-attention. | forward-pass benchmark + crossover figure; mechanism withheld |
 
