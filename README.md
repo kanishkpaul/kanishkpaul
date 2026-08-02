@@ -56,7 +56,7 @@ I build tools that make model behavior more local, visible, and inspectable.
 | project | what I built | signals |
 | --- | --- | --- |
 | [sefai](https://github.com/kanishkpaul/sefai) | My Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment | `Rust` &middot; `2 stars` |
-| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | My terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop | `TypeScript` &middot; `1 star` |
+| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | My terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop | `TypeScript` &middot; `2 stars` |
 | [reasontrace](https://github.com/kanishkpaul/reasontrace) | My visual debugger for turning agent logs into an inspectable graph with replay | `TypeScript` &middot; `1 star` |
 | [casca](https://github.com/kanishkpaul/casca) | My screenshot-grounded desktop-agent scaffold for visual grounding and action-reliability research | `Python` &middot; `1 star` |
 | [stockfih](https://github.com/kanishkpaul/stockfih) | My chess-analysis interface pairing browser-side Stockfish with short natural-language coaching | `TypeScript` &middot; `1 star` |
@@ -76,10 +76,10 @@ I build tools that make model behavior more local, visible, and inspectable.
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,489,808
-lines.removed        61,267
-commits.counted         489
-stars.received           15
+lines.added       5,490,888
+lines.removed        61,269
+commits.counted         490
+stars.received           16
 followers                18
 following                 6
 public.repos             18
