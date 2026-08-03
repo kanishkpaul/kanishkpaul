@@ -52,7 +52,7 @@ lines.added       5,507,801
 lines.removed        62,933
 commits.counted         518
 stars.received           16
-followers                18
+followers                17
 following                 6
 public.repos             18
 </pre>
@@ -67,7 +67,7 @@ linkedin  https://linkedin.com/in/kanishk-paul
 </pre>
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
 <!-- profile-badges:end -->
 
 </td>
