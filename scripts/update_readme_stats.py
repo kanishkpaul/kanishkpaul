@@ -34,27 +34,27 @@ class CommitStats:
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
         name="sefai",
-        description="My Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment",
+        description="Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment",
         language="Rust",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="My terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
+        description="Terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="My visual debugger for turning agent logs into an inspectable graph with replay",
+        description="Visual debugger for turning agent logs into an inspectable graph with step replay",
         language="TypeScript",
     ),
     FeaturedRepo(
         name="casca",
-        description="My screenshot-grounded desktop-agent scaffold for visual grounding and action-reliability research",
+        description="Desktop-agent research scaffold for visual grounding and action-reliability research",
         language="Python",
     ),
     FeaturedRepo(
         name="stockfih",
-        description="My chess-analysis interface pairing browser-side Stockfish with short natural-language coaching",
+        description="Chess-analysis interface pairing browser-side Stockfish with natural-language coaching",
         language="TypeScript",
     ),
 )

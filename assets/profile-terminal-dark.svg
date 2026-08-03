@@ -1,147 +1,144 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
-  <title id="title">My research terminal</title>
-  <desc id="desc">I work across reasoning, agents, language, and local inference. Three animated sigils represent identity, composition, and agency.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Paul — Research &amp; Systems</title>
+  <desc id="desc">Artistic header banner illustrating graph constellations, reasoning loops, and intelligent agent systems.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="0.56" stop-color="#101822"/>
-      <stop offset="1" stop-color="#0a1118"/>
+    <!-- Background Gradients -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#090d16"/>
     </linearGradient>
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#3dd6bd"/>
-      <stop offset="0.55" stop-color="#58a6ff"/>
-      <stop offset="1" stop-color="#bc8cff"/>
+    
+    <!-- Accent Line Gradients -->
+    <linearGradient id="accent-cyan-violet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
-    <radialGradient id="node" cx="35%" cy="30%" r="75%">
-      <stop stop-color="#eafff9"/>
-      <stop offset="0.35" stop-color="#69ead0"/>
-      <stop offset="1" stop-color="#15917e"/>
+
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="orb-cyan" cx="20%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
     </radialGradient>
-    <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <radialGradient id="orb-violet" cx="80%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L8 4 0 8Z" fill="#61dec8"/>
-    </marker>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" opacity="0.45"/>
+      <circle cx="40" cy="40" r="1" fill="#334155" opacity="0.6"/>
+    </pattern>
   </defs>
+
   <style>
-    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .muted { fill: #7d8998; }
-    .copy { fill: #c9d1d9; }
-    .key { fill: #79c0ff; font-weight: 700; }
-    .value { fill: #d2e8de; }
-    .accent { fill: #3dd6bd; }
-    .small { font-size: 14px; }
-    .micro { font-size: 11px; letter-spacing: .11em; }
-    .body { font-size: 16px; }
-    .glyph-main { fill: none; stroke: #61dec8; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-    .glyph-secondary { fill: none; stroke: #79c0ff; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-    .glyph-ghost { fill: none; stroke: #334355; stroke-width: 1; }
-    .glyph-node { fill: url(#node); filter: url(#node-glow); }
-    .glyph-text { fill: #c9d1d9; font-size: 13px; font-weight: 700; }
-    .glyph-note { fill: #7d8998; font-size: 10px; letter-spacing: .08em; }
-    .frame { opacity: 0; }
-    .frame-a { animation: frame-a 18s linear infinite; }
-    .frame-b { animation: frame-b 18s linear infinite; }
-    .frame-c { animation: frame-c 18s linear infinite; }
-    .cursor { animation: blink 1.05s step-end infinite; }
-    .scanline { animation: scan 8s linear infinite; }
-    .signal { animation: signal 18s ease-in-out infinite; }
-    @keyframes frame-a { 0%, 29% { opacity: 1; } 33%, 96% { opacity: 0; } 100% { opacity: 1; } }
-    @keyframes frame-b { 0%, 29% { opacity: 0; } 33%, 62% { opacity: 1; } 66%, 100% { opacity: 0; } }
-    @keyframes frame-c { 0%, 62% { opacity: 0; } 66%, 96% { opacity: 1; } 100% { opacity: 0; } }
-    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-    @keyframes scan { from { transform: translateY(-12px); } to { transform: translateY(472px); } }
-    @keyframes signal { 0%, 29%, 34%, 62%, 67%, 96%, 100% { opacity: 0; } 31%, 32%, 64%, 65%, 98% { opacity: .55; } }
-    @media (prefers-reduced-motion: reduce) {
-      .frame-a { opacity: 1; animation: none; }
-      .frame-b, .frame-c, .scanline, .signal { display: none; animation: none; }
-      .cursor { animation: none; }
-    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .title-text { fill: #f8fafc; font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+    .subtitle-text { fill: #94a3b8; font-size: 14px; font-weight: 400; letter-spacing: 0.02em; }
+    .tag-text { fill: #38bdf8; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+    .node-label { fill: #cbd5e1; font-size: 11px; font-weight: 500; }
+    .pulse-node { animation: pulse 4s ease-in-out infinite alternate; }
+    .orbit-path { animation: spin 40s linear infinite; transform-origin: 810px 170px; }
+    @keyframes pulse { 0% { opacity: 0.4; } 100% { opacity: 0.9; } }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .pulse-node, .orbit-path { animation: none; } }
   </style>
 
-  <rect x="1" y="1" width="998" height="458" rx="16" fill="url(#bg)" stroke="#30363d" stroke-width="2"/>
-  <path d="M1 48H999" stroke="#30363d"/>
-  <circle cx="25" cy="24" r="6" fill="#ff7b72"/>
-  <circle cx="46" cy="24" r="6" fill="#d29922"/>
-  <circle cx="67" cy="24" r="6" fill="#3fb950"/>
-  <text x="500" y="29" text-anchor="middle" class="muted small">kanishk@research: ~/profile</text>
+  <!-- Container -->
+  <rect width="1000" height="340" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="1000" height="340" rx="16" fill="url(#grid)"/>
 
-  <rect x="22" y="70" width="330" height="326" rx="10" fill="#0b1118" stroke="#263342"/>
-  <path d="M22 110H352" stroke="#263342"/>
-  <text x="42" y="95" class="muted small">symbolic state</text>
-  <text x="326" y="95" text-anchor="end" class="accent micro cursor">LIVE</text>
+  <!-- Ambient Glow Orbs -->
+  <circle cx="200" cy="120" r="280" fill="url(#orb-cyan)"/>
+  <circle cx="800" cy="170" r="300" fill="url(#orb-violet)"/>
 
-  <g class="frame frame-a" transform="translate(60 126)">
-    <path class="glyph-ghost" d="M42 11L125 11 207 58 207 153 125 200 42 153Z" stroke-dasharray="3 8"/>
-    <path class="glyph-secondary" d="M23 49V24H48M227 49V24H202M23 162V187H48M227 162V187H202"/>
-    <path class="glyph-main" stroke-width="4" d="M82 43V168M82 106L166 42M112 84L174 169"/>
-    <path class="glyph-secondary" d="M92 43V92M92 120V168M99 105L173 50M119 92L165 160"/>
-    <circle class="glyph-node" cx="82" cy="43" r="5"/>
-    <circle class="glyph-node" cx="82" cy="106" r="6"/>
-    <circle class="glyph-node" cx="82" cy="168" r="5"/>
-    <circle cx="166" cy="42" r="5" fill="#79c0ff"/>
-    <circle cx="174" cy="169" r="5" fill="#bc8cff"/>
-    <text x="125" y="194" text-anchor="middle" class="glyph-note">KANISHK / 01</text>
+  <!-- Left Artistic Geometric Constellation -->
+  <g opacity="0.85">
+    <!-- Connecting Constellation Lines -->
+    <path d="M 60 210 L 140 140 L 220 220 L 310 130 L 380 240 L 460 160" fill="none" stroke="url(#accent-cyan-violet)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+    <path d="M 140 140 L 220 70 L 310 130 L 220 220 L 140 140" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.35"/>
+    <path d="M 310 130 L 380 70 L 460 160" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.35"/>
+
+    <!-- Nodes -->
+    <circle cx="60" cy="210" r="4" fill="#2dd4bf" filter="url(#glow)"/>
+    <circle cx="140" cy="140" r="5.5" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="220" cy="70" r="4" fill="#818cf8" filter="url(#glow)"/>
+    <circle cx="220" cy="220" r="5" fill="#2dd4bf" filter="url(#glow)"/>
+    <circle cx="310" cy="130" r="6" fill="#c084fc" filter="url(#glow)"/>
+    <circle cx="380" cy="70" r="4" fill="#f472b6" filter="url(#glow)"/>
+    <circle cx="380" cy="240" r="4.5" fill="#818cf8" filter="url(#glow)"/>
+    <circle cx="460" cy="160" r="5" fill="#38bdf8" filter="url(#glow)"/>
   </g>
 
-  <g class="frame frame-b" transform="translate(58 126)">
-    <path class="glyph-ghost" d="M16 18H238V194H16Z" stroke-dasharray="2 9"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M62 52H183"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M202 70V145"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M183 164H62"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M43 145V70"/>
-    <path class="glyph-secondary" marker-end="url(#arrow)" stroke-dasharray="5 6" d="M57 65L188 151"/>
-    <circle cx="43" cy="52" r="19" fill="#0b1118" stroke="#61dec8" stroke-width="2"/>
-    <circle cx="202" cy="52" r="19" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
-    <circle cx="43" cy="164" r="19" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
-    <circle cx="202" cy="164" r="19" fill="#0b1118" stroke="#bc8cff" stroke-width="2"/>
-    <text x="43" y="57" text-anchor="middle" class="glyph-text">A</text>
-    <text x="202" y="57" text-anchor="middle" class="glyph-text">B</text>
-    <text x="43" y="169" text-anchor="middle" class="glyph-text">C</text>
-    <text x="202" y="169" text-anchor="middle" class="glyph-text">D</text>
-    <text x="122" y="44" text-anchor="middle" class="glyph-note">f</text>
-    <text x="212" y="111" class="glyph-note">g</text>
-    <text x="122" y="179" text-anchor="middle" class="glyph-note">h</text>
-    <text x="28" y="111" class="glyph-note">k</text>
-    <circle class="glyph-node" cx="123" cy="106" r="4"/>
+  <!-- Right Geometric Celestial Graph -->
+  <g transform="translate(30, 0)">
+    <!-- Concentric Rings -->
+    <circle cx="780" cy="170" r="110" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="3 6" opacity="0.7"/>
+    <circle cx="780" cy="170" r="75" fill="none" stroke="url(#accent-glow)" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="780" cy="170" r="40" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-dasharray="2 4" opacity="0.9"/>
+    
+    <g class="orbit-path">
+      <circle cx="780" cy="60" r="4" fill="#38bdf8" filter="url(#glow)"/>
+      <circle cx="855" cy="170" r="5" fill="#c084fc" filter="url(#glow)"/>
+      <circle cx="780" cy="245" r="4" fill="#2dd4bf" filter="url(#glow)"/>
+      <circle cx="740" cy="170" r="3.5" fill="#818cf8" filter="url(#glow)"/>
+    </g>
+
+    <!-- Center Core Node -->
+    <circle cx="780" cy="170" r="12" fill="#0f172a" stroke="url(#accent-cyan-violet)" stroke-width="2.5" filter="url(#glow)"/>
+    <circle cx="780" cy="170" r="4" fill="#38bdf8"/>
   </g>
 
-  <g class="frame frame-c" transform="translate(55 121)">
-    <path class="glyph-ghost" d="M126 8L239 190H13Z" stroke-dasharray="3 8"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M144 43C188 50 219 80 224 124"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M207 162C169 197 83 198 44 162"/>
-    <path class="glyph-main" marker-end="url(#arrow)" d="M28 124C34 80 65 50 109 43"/>
-    <circle cx="126" cy="35" r="24" fill="#0b1118" stroke="#61dec8" stroke-width="2"/>
-    <circle cx="224" cy="147" r="24" fill="#0b1118" stroke="#bc8cff" stroke-width="2"/>
-    <circle cx="28" cy="147" r="24" fill="#0b1118" stroke="#79c0ff" stroke-width="2"/>
-    <text x="126" y="39" text-anchor="middle" class="glyph-text">OBS</text>
-    <text x="224" y="151" text-anchor="middle" class="glyph-text">ACT</text>
-    <text x="28" y="151" text-anchor="middle" class="glyph-text">MOD</text>
-    <path class="glyph-secondary" d="M94 112Q126 84 158 112Q126 140 94 112Z"/>
-    <circle class="glyph-node" cx="126" cy="112" r="6"/>
-    <text x="126" y="177" text-anchor="middle" class="glyph-note">CLOSE THE LOOP</text>
+  <!-- Top Accent Bar -->
+  <path d="M 60 48 L 940 48" stroke="url(#accent-cyan-violet)" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Main Hero Typography & Content -->
+  <g transform="translate(60, 115)">
+    <text x="0" y="0" class="mono tag-text">RESEARCH &amp; SYSTEMS ARCHITECTURE</text>
+    <text x="0" y="42" class="title-text">Kanishk Paul</text>
+    <text x="0" y="78" class="subtitle-text">Building at the intersection of reasoning, agents, multilingual NLP, and local models.</text>
+
+    <!-- Micro Pill Tags -->
+    <g transform="translate(0, 110)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="108" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="14" cy="13" r="3.5" fill="#2dd4bf"/>
+      <text x="26" y="17" class="mono node-label" font-size="10">REASONING</text>
+
+      <!-- Pill 2 -->
+      <rect x="118" y="0" width="88" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="132" cy="13" r="3.5" fill="#38bdf8"/>
+      <text x="144" y="17" class="mono node-label" font-size="10">AGENTS</text>
+
+      <!-- Pill 3 -->
+      <rect x="216" y="0" width="138" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="230" cy="13" r="3.5" fill="#c084fc"/>
+      <text x="242" y="17" class="mono node-label" font-size="10">LOCAL INFERENCE</text>
+
+      <!-- Pill 4 -->
+      <rect x="364" y="0" width="132" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="378" cy="13" r="3.5" fill="#f472b6"/>
+      <text x="390" y="17" class="mono node-label" font-size="10">MULTILINGUAL</text>
+    </g>
   </g>
 
-  <text x="42" y="374" class="frame frame-a muted small">01 / identity</text>
-  <text x="42" y="374" class="frame frame-b muted small">02 / composition</text>
-  <text x="42" y="374" class="frame frame-c muted small">03 / agency</text>
-
-  <rect x="382" y="70" width="596" height="326" rx="10" fill="#0b1118" stroke="#263342"/>
-  <text x="410" y="105" class="copy body">kanishk@research</text>
-  <rect x="410" y="120" width="536" height="2" rx="1" fill="url(#rule)"/>
-  <text x="410" y="158" class="key body">role</text><text x="520" y="158" class="muted body">··········</text><text x="650" y="158" class="value body">researcher + systems builder</text>
-  <text x="410" y="194" class="key body">focus</text><text x="520" y="194" class="muted body">·········</text><text x="650" y="194" class="value body">reasoning · agents · language</text>
-  <text x="410" y="230" class="key body">method</text><text x="520" y="230" class="muted body">········</text><text x="650" y="230" class="value body">structure before scale</text>
-  <text x="410" y="266" class="key body">loop</text><text x="520" y="266" class="muted body">··········</text><text x="650" y="266" class="value body">build → test → falsify → revise</text>
-  <text x="410" y="302" class="key body">stance</text><text x="520" y="302" class="muted body">·······</text><text x="650" y="302" class="value body">questions &gt; claims</text>
-  <text x="410" y="346" class="accent body">$</text><text x="432" y="346" class="copy body">cat note.txt</text>
-  <text x="410" y="374" class="muted small">I build to understand.</text>
-  <rect x="596" y="362" width="9" height="16" rx="1" fill="#3dd6bd" class="cursor"/>
-
-  <rect x="0" y="0" width="1000" height="2" fill="#3dd6bd" opacity=".055" class="scanline"/>
-  <rect x="42" y="223" width="268" height="2" fill="url(#rule)" class="signal"/>
-  <text x="22" y="430" class="muted small">[●] currently building</text>
-  <text x="978" y="430" text-anchor="end" class="muted small">questions &gt; claims</text>
+  <!-- Bottom Border Line -->
+  <path d="M 60 300 L 940 300" stroke="#1e293b" stroke-width="1"/>
 </svg>
