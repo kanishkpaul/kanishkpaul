@@ -84,9 +84,9 @@ Empirical explorations in language alignment, hidden-rule induction, and attenti
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,497,716
-lines.removed        61,720
-commits.counted         507
+lines.added       5,501,491
+lines.removed        61,971
+commits.counted         513
 stars.received           16
 followers                18
 following                 6
