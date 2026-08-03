@@ -35,49 +35,49 @@ class CommitStats:
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
         name="sefai",
-        description="Runs local GGUF models inside a sandboxed environment via llama.cpp bindings.",
+        description="runs local GGUF models inside a sandboxed llama.cpp runtime.",
         language="Rust",
         emoji="🛡️",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="Controls browser navigation and Web UI automation with step-by-step execution traces and safety guardrails.",
+        description="drives Chrome from plain instructions and shows every step it took.",
         language="TypeScript",
         emoji="🌐",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="Visualizes AI agent execution logs as interactive reasoning graphs with state replay.",
+        description="replays an agent run as a graph you can step through state by state.",
         language="TypeScript",
         emoji="🔍",
     ),
     FeaturedRepo(
         name="casca",
-        description="Grounds desktop computer-use actions through visual screenshot analysis and UI target verification.",
+        description="turns screenshots into verified click targets for computer-use agents.",
         language="Python",
         emoji="👁️",
     ),
     FeaturedRepo(
         name="stockfih",
-        description="Analyzes chess positions via browser-side Stockfish engine paired with natural-language move coaching.",
+        description="analyses chess positions in the browser and explains each move in words.",
         language="TypeScript",
         emoji="♟️",
     ),
     FeaturedRepo(
         name="lifesim",
-        description="Simulates agent daily life routines, decision trees, and behavioral state progressions.",
+        description="simulates an agent's daily routine, choices, and drifting internal state.",
         language="Python",
         emoji="🎮",
     ),
     FeaturedRepo(
         name="ParaReport",
-        description="Generates structured analytical PDF reports and data summaries from JSON inputs.",
+        description="turns raw JSON into a formatted, structured analytical PDF.",
         language="TypeScript",
         emoji="📄",
     ),
     FeaturedRepo(
         name="craon-ai-assignment",
-        description="Executes an automated AI task assignment and workflow evaluation pipeline.",
+        description="runs an AI task-assignment and evaluation pipeline end to end.",
         language="TypeScript",
         emoji="📝",
     ),
@@ -290,10 +290,6 @@ def fetch_commit_stats(repos: list[dict], token: str | None) -> CommitStats:
     )
 
 
-def pluralize_stars(stars: int) -> str:
-    return "star" if stars == 1 else "stars"
-
-
 def replace_section(content: str, marker: str, replacement: str) -> str:
     pattern = re.compile(
         rf"(<!-- {re.escape(marker)}:start -->)(.*?)(<!-- {re.escape(marker)}:end -->)",
@@ -312,7 +308,7 @@ def render_profile_badges(user: dict) -> str:
     followers = int(user["followers"])
     public_repos = int(user["public_repos"])
     return (
-        '  <a href="https://github.com/kanishkpaul">'
+        '<a href="https://github.com/kanishkpaul">'
         f'<code>{followers} followers</code></a> · '
         '<a href="https://github.com/kanishkpaul?tab=repositories">'
         f'<code>{public_repos} public repos</code></a>'
@@ -331,10 +327,12 @@ def render_stats_badges(
     additions = f"{commit_stats.additions:,}"
     deletions = f"{commit_stats.deletions:,}"
     commits = f"{commit_stats.commits:,}"
-    scope_note = "" if includes_private else "  # public repositories only"
+    scope_note = "" if includes_private else "  # public only"
+    # Bare <pre>: GitHub strips inline styles, so these lines cannot be made to
+    # wrap. Keep every one of them short enough not to widen the layout cell.
     return "\n".join(
         [
-            '<pre style="white-space: pre-wrap; word-break: break-word;">',
+            "<pre>",
             f"lines.added      {additions:>10}{scope_note}",
             f"lines.removed    {deletions:>10}",
             f"commits.counted  {commits:>10}",
@@ -347,25 +345,16 @@ def render_stats_badges(
     )
 
 
-def render_featured_projects(repo_lookup: dict[str, dict]) -> str:
-    lines = [
-        "| project | what it does | signals |",
-        "| --- | --- | --- |",
-    ]
+def render_featured_projects() -> str:
+    # Plain markdown list, not a table: GitHub strips every `style` attribute
+    # from README HTML, so a nested table inside the layout cell has no way to
+    # wrap long text and forces the whole page to scroll sideways.
+    lines = []
     for featured_repo in FEATURED_REPOS:
-        repo = repo_lookup.get(featured_repo.name)
-        if repo is None:
-            stars = 0
-            lang = featured_repo.language
-        else:
-            stars = int(repo.get("stargazers_count", 0))
-            lang = str(repo.get("language") or featured_repo.language)
-
         lines.append(
-            "| "
-            f"{featured_repo.emoji} [{featured_repo.name}](https://github.com/{REPO_OWNER}/{featured_repo.name}) | "
-            f"{featured_repo.description} | "
-            f"`{lang}` &middot; `{stars} {pluralize_stars(stars)}` |"
+            f"* {featured_repo.emoji} "
+            f"**[{featured_repo.name}](https://github.com/{REPO_OWNER}/{featured_repo.name})** "
+            f"— {featured_repo.description}"
         )
 
     return "\n".join(lines)
@@ -385,7 +374,6 @@ def main() -> int:
         sys.stderr.write(f"README stats refresh failed: {error}\n")
         return 1
 
-    repo_lookup = {repo["name"]: repo for repo in repos}
     total_stars = sum(int(repo["stargazers_count"]) for repo in repos)
 
     content = README_PATH.read_text(encoding="utf-8")
@@ -395,7 +383,7 @@ def main() -> int:
         "stats-badges",
         render_stats_badges(user, total_stars, commit_stats, includes_private),
     )
-    content = replace_section(content, "pinned-projects", render_featured_projects(repo_lookup))
+    content = replace_section(content, "pinned-projects", render_featured_projects())
     README_PATH.write_text(content, encoding="utf-8")
 
     visibility = "public and private" if includes_private else "public"

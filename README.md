@@ -1,69 +1,53 @@
-<table width="100%" style="width: 100%; table-layout: fixed; border-collapse: collapse; border: none;">
+<table width="100%">
   <tr>
-    <td width="80" style="width: 80px; max-width: 80px; vertical-align: top; padding: 0; margin: 0; border: none;">
-      <img src="./assets/rain-margin.svg" width="80" style="max-width: 100%; height: auto; display: block;" alt="Falling rain margin animation" />
+    <td width="104" valign="top">
+      <img src="./assets/rain-margin.svg" width="104" alt="Rain falling down the margin" />
     </td>
-    <td style="vertical-align: top; padding-left: 15px; word-break: break-word; overflow-wrap: break-word; border: none;">
+    <td valign="top">
 
-<pre style="white-space: pre-wrap; word-break: break-word;">
+<pre>
 $ whoami
-Kanishk Paul — Systems &amp; Research Engineer
+Kanishk Paul — systems &amp; research engineer
 
 $ cat focus.txt
-Reasoning · Autonomous Agents · Multilingual NLP · Local Inference
+reasoning · autonomous agents
+multilingual nlp · local inference
 </pre>
 
-### 🛠️ Projects
-
-All public software repositories (excluding core research prototypes):
+<pre>
+$ ls projects/
+</pre>
 
 <!-- pinned-projects:start -->
-| project | what it does | signals |
-| --- | --- | --- |
-| 🛡️ [sefai](https://github.com/kanishkpaul/sefai) | Runs local GGUF models inside a sandboxed environment via llama.cpp bindings. | `Rust` &middot; `2 stars` |
-| 🌐 [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | Controls browser navigation and Web UI automation with step-by-step execution traces and safety guardrails. | `TypeScript` &middot; `2 stars` |
-| 🔍 [reasontrace](https://github.com/kanishkpaul/reasontrace) | Visualizes AI agent execution logs as interactive reasoning graphs with state replay. | `TypeScript` &middot; `1 star` |
-| 👁️ [casca](https://github.com/kanishkpaul/casca) | Grounds desktop computer-use actions through visual screenshot analysis and UI target verification. | `Python` &middot; `1 star` |
-| ♟️ [stockfih](https://github.com/kanishkpaul/stockfih) | Analyzes chess positions via browser-side Stockfish engine paired with natural-language move coaching. | `TypeScript` &middot; `1 star` |
-| 🎮 [lifesim](https://github.com/kanishkpaul/lifesim) | Simulates agent daily life routines, decision trees, and behavioral state progressions. | `Python` &middot; `0 stars` |
-| 📄 [ParaReport](https://github.com/kanishkpaul/ParaReport) | Generates structured analytical PDF reports and data summaries from JSON inputs. | `TypeScript` &middot; `0 stars` |
-| 📝 [craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment) | Executes an automated AI task assignment and workflow evaluation pipeline. | `TypeScript` &middot; `0 stars` |
+* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models inside a sandboxed llama.cpp runtime.
+* 🌐 **[chromeclaw](https://github.com/kanishkpaul/chromeclaw)** — drives Chrome from plain instructions and shows every step it took.
+* 🔍 **[reasontrace](https://github.com/kanishkpaul/reasontrace)** — replays an agent run as a graph you can step through state by state.
+* 👁️ **[casca](https://github.com/kanishkpaul/casca)** — turns screenshots into verified click targets for computer-use agents.
+* ♟️ **[stockfih](https://github.com/kanishkpaul/stockfih)** — analyses chess positions in the browser and explains each move in words.
+* 🎮 **[lifesim](https://github.com/kanishkpaul/lifesim)** — simulates an agent's daily routine, choices, and drifting internal state.
+* 📄 **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns raw JSON into a formatted, structured analytical PDF.
+* 📝 **[craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment)** — runs an AI task-assignment and evaluation pipeline end to end.
 <!-- pinned-projects:end -->
 
-<br />
+<pre>
+$ ls research/
+</pre>
 
-### 🔬 Research Projects
+* 🔬 **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** — measures how much honorific register a Bengali→English→Hindi pivot destroys.
+  Scores every sentence with a contextual-fraction obstruction, then tests whether that score predicts where the translation actually breaks.
 
-Dedicated research prototypes, measurement studies, and algorithmic benchmarks:
+* 🧩 **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** — learns the rules of an unseen ARC-AGI-3 grid world while playing it.
+  Probes the transitions it is least sure about on purpose, then plans against the world model it has built so far.
 
-* 🔬 **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** (`Python`)
-  > Quantifies honorific-register loss across direct Bengali↔Hindi vs. English-pivot machine translation pathways.  
-  > Evaluates how intermediate pivot languages degrade formal address structures in South Asian language pairs.
+* ⚡ **[butterflygate](https://github.com/kanishkpaul/butterflygate)** — swaps self-attention for an O(n log n) butterfly-structured mixer.
+  Benchmarks throughput, memory, and long-context quality head to head against dense attention.
 
-<br />
-
-* 🧩 **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** (`Python`)
-  > Operates as a world-model agent substrate for online rule induction, hypothesis probing, and active planning.  
-  > Enables agents to explore hidden grid environments, test state transitions, and infer abstract ARC rules under spatial constraints.
-
-<br />
-
-* ⚡ **[butterflygate](https://github.com/kanishkpaul/butterflygate)** (`Python`)
-  > Benchmarks sub-quadratic $\mathcal{O}(n \log n)$ attention mechanisms against dense self-attention architectures.  
-  > Measures throughput, context window scalability, and memory consumption across long-sequence modeling benchmarks.
-
-<br />
-
-<!-- profile-badges:start -->
-  <a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
-<!-- profile-badges:end -->
-
-<pre style="white-space: pre-wrap; word-break: break-word;">
+<pre>
 $ cat telemetry.log
 </pre>
 
 <!-- stats-badges:start -->
-<pre style="white-space: pre-wrap; word-break: break-word;">
+<pre>
 lines.added       5,506,487
 lines.removed        62,507
 commits.counted         516
@@ -74,16 +58,18 @@ public.repos             18
 </pre>
 <!-- stats-badges:end -->
 
-<br />
-
-<pre style="white-space: pre-wrap; word-break: break-word;">
+<pre>
 $ cat contact.txt
-Email:    kanishkpaul1729@gmail.com
-Web:      https://kanishkpaul.com
-GitHub:   https://github.com/kanishkpaul
-LinkedIn: https://www.linkedin.com/in/kanishk-paul
+email     kanishkpaul1729@gmail.com
+web       https://kanishkpaul.com
+github    https://github.com/kanishkpaul
+linkedin  https://linkedin.com/in/kanishk-paul
 </pre>
 
-    </td>
+<!-- profile-badges:start -->
+<a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
+<!-- profile-badges:end -->
+
+</td>
   </tr>
 </table>
