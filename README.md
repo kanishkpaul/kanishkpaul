@@ -1,11 +1,11 @@
-<table>
+<table width="100%" style="width: 100%; table-layout: fixed; border-collapse: collapse; border: none;">
   <tr>
-    <td width="150" align="center" valign="top" style="padding: 0; margin: 0; vertical-align: top;">
-      <img src="./assets/rain-margin.svg" width="140" alt="Rain animation margin" />
+    <td width="80" style="width: 80px; max-width: 80px; vertical-align: top; padding: 0; margin: 0; border: none;">
+      <img src="./assets/rain-margin.svg" width="80" style="max-width: 100%; height: auto; display: block;" alt="Falling rain margin animation" />
     </td>
-    <td valign="top" style="padding-left: 20px; vertical-align: top;">
+    <td style="vertical-align: top; padding-left: 15px; word-break: break-word; overflow-wrap: break-word; border: none;">
 
-<pre>
+<pre style="white-space: pre-wrap; word-break: break-word;">
 $ whoami
 Kanishk Paul — Systems &amp; Research Engineer
 
@@ -37,19 +37,19 @@ All public software repositories (excluding core research prototypes):
 Dedicated research prototypes, measurement studies, and algorithmic benchmarks:
 
 * 🔬 **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** (`Python`)
-  > Quantifies honorific-register loss across direct Bengali↔Hindi vs. English-pivot machine translation pathways.
+  > Quantifies honorific-register loss across direct Bengali↔Hindi vs. English-pivot machine translation pathways.  
   > Evaluates how intermediate pivot languages degrade formal address structures in South Asian language pairs.
 
 <br />
 
 * 🧩 **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** (`Python`)
-  > Operates as a world-model agent substrate for online rule induction, hypothesis probing, and active planning.
+  > Operates as a world-model agent substrate for online rule induction, hypothesis probing, and active planning.  
   > Enables agents to explore hidden grid environments, test state transitions, and infer abstract ARC rules under spatial constraints.
 
 <br />
 
 * ⚡ **[butterflygate](https://github.com/kanishkpaul/butterflygate)** (`Python`)
-  > Benchmarks sub-quadratic $\mathcal{O}(n \log n)$ attention mechanisms against dense self-attention architectures.
+  > Benchmarks sub-quadratic $\mathcal{O}(n \log n)$ attention mechanisms against dense self-attention architectures.  
   > Measures throughput, context window scalability, and memory consumption across long-sequence modeling benchmarks.
 
 <br />
@@ -58,15 +58,15 @@ Dedicated research prototypes, measurement studies, and algorithmic benchmarks:
   <a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
 <!-- profile-badges:end -->
 
-<pre>
+<pre style="white-space: pre-wrap; word-break: break-word;">
 $ cat telemetry.log
 </pre>
 
 <!-- stats-badges:start -->
-<pre>
+<pre style="white-space: pre-wrap; word-break: break-word;">
 lines.added       5,506,416
 lines.removed        62,418
-commits.counted         515
+commits.counted         507
 stars.received           16
 followers                18
 following                 6
@@ -76,7 +76,7 @@ public.repos             18
 
 <br />
 
-<pre>
+<pre style="white-space: pre-wrap; word-break: break-word;">
 $ cat contact.txt
 Email:    kanishkpaul1729@gmail.com
 Web:      https://kanishkpaul.com

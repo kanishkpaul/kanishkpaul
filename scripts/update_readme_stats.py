@@ -334,7 +334,7 @@ def render_stats_badges(
     scope_note = "" if includes_private else "  # public repositories only"
     return "\n".join(
         [
-            "<pre>",
+            '<pre style="white-space: pre-wrap; word-break: break-word;">',
             f"lines.added      {additions:>10}{scope_note}",
             f"lines.removed    {deletions:>10}",
             f"commits.counted  {commits:>10}",
