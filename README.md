@@ -76,9 +76,9 @@ I build tools that make model behavior more local, visible, and inspectable.
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,497,683
+lines.added       5,497,716
 lines.removed        61,720
-commits.counted         506
+commits.counted         507
 stars.received           16
 followers                18
 following                 6
