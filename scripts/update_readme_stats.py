@@ -21,6 +21,7 @@ class FeaturedRepo:
     name: str
     description: str
     language: str
+    emoji: str = "📦"
 
 
 @dataclass(frozen=True)
@@ -34,28 +35,51 @@ class CommitStats:
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
         name="sefai",
-        description="Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment",
+        description="Runs local GGUF models inside a sandboxed environment via llama.cpp bindings.",
         language="Rust",
+        emoji="🛡️",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="Terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop",
+        description="Controls browser navigation and Web UI automation with step-by-step execution traces and safety guardrails.",
         language="TypeScript",
+        emoji="🌐",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="Visual debugger for turning agent logs into an inspectable graph with step replay",
+        description="Visualizes AI agent execution logs as interactive reasoning graphs with state replay.",
         language="TypeScript",
+        emoji="🔍",
     ),
     FeaturedRepo(
         name="casca",
-        description="Desktop-agent research scaffold for visual grounding and action-reliability research",
+        description="Grounds desktop computer-use actions through visual screenshot analysis and UI target verification.",
         language="Python",
+        emoji="👁️",
     ),
     FeaturedRepo(
         name="stockfih",
-        description="Chess-analysis interface pairing browser-side Stockfish with natural-language coaching",
+        description="Analyzes chess positions via browser-side Stockfish engine paired with natural-language move coaching.",
         language="TypeScript",
+        emoji="♟️",
+    ),
+    FeaturedRepo(
+        name="lifesim",
+        description="Simulates agent daily life routines, decision trees, and behavioral state progressions.",
+        language="Python",
+        emoji="🎮",
+    ),
+    FeaturedRepo(
+        name="ParaReport",
+        description="Generates structured analytical PDF reports and data summaries from JSON inputs.",
+        language="TypeScript",
+        emoji="📄",
+    ),
+    FeaturedRepo(
+        name="craon-ai-assignment",
+        description="Executes an automated AI task assignment and workflow evaluation pipeline.",
+        language="TypeScript",
+        emoji="📝",
     ),
 )
 
@@ -325,20 +349,23 @@ def render_stats_badges(
 
 def render_featured_projects(repo_lookup: dict[str, dict]) -> str:
     lines = [
-        "| project | what I built | signals |",
+        "| project | what it does | signals |",
         "| --- | --- | --- |",
     ]
     for featured_repo in FEATURED_REPOS:
         repo = repo_lookup.get(featured_repo.name)
         if repo is None:
-            raise ValueError(f"Featured repo '{featured_repo.name}' was not returned by GitHub.")
+            stars = 0
+            lang = featured_repo.language
+        else:
+            stars = int(repo.get("stargazers_count", 0))
+            lang = str(repo.get("language") or featured_repo.language)
 
-        stars = int(repo["stargazers_count"])
         lines.append(
             "| "
-            f"[{featured_repo.name}](https://github.com/{REPO_OWNER}/{featured_repo.name}) | "
+            f"{featured_repo.emoji} [{featured_repo.name}](https://github.com/{REPO_OWNER}/{featured_repo.name}) | "
             f"{featured_repo.description} | "
-            f"`{featured_repo.language}` &middot; `{stars} {pluralize_stars(stars)}` |"
+            f"`{lang}` &middot; `{stars} {pluralize_stars(stars)}` |"
         )
 
     return "\n".join(lines)

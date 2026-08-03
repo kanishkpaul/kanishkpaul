@@ -1,86 +1,66 @@
-<a href="https://kanishkpaul.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-terminal-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/profile-terminal-light.svg" />
-    <img src="./assets/profile-terminal-dark.svg" width="100%" alt="Kanishk Paul — Research &amp; Systems Architecture" />
-  </picture>
-</a>
-
-<p align="center">
-  <a href="https://kanishkpaul.com"><code>kanishkpaul.com</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://kanishkpaul.com/research"><code>research</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="mailto:kanishkpaul1729@gmail.com"><code>email</code></a>
-  &nbsp;&middot;&nbsp;
-<!-- profile-badges:start -->
-  <a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
-<!-- profile-badges:end -->
-</p>
-
-<br />
-
 <table>
   <tr>
-    <td width="140" align="center" style="vertical-align: middle;">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./assets/research-orbit-dark.svg" />
-        <source media="(prefers-color-scheme: light)" srcset="./assets/research-orbit-light.svg" />
-        <img src="./assets/research-orbit-dark.svg" width="120" alt="Geometric research sigil" />
-      </picture>
+    <td width="150" align="center" valign="top" style="padding: 0; margin: 0; vertical-align: top;">
+      <img src="./assets/rain-margin.svg" width="140" alt="Rain animation margin" />
     </td>
-    <td style="vertical-align: middle;">
-      <h3>Hello, I’m Kanishk.</h3>
-      I engineer systems for <strong>machine reasoning, autonomous agents, multilingual NLP, and local model execution</strong>.
-      <br /><br />
-      My work centers on building inspectable agent substrates, empirical evaluation loops, and localized AI tools that operate with visible control traces.
-    </td>
-  </tr>
-</table>
+    <td valign="top" style="padding-left: 20px; vertical-align: top;">
 
-<br />
+<pre>
+$ whoami
+Kanishk Paul — Systems &amp; Research Engineer
 
-## 🛠️ Featured Systems
+$ cat focus.txt
+Reasoning · Autonomous Agents · Multilingual NLP · Local Inference
+</pre>
 
-Selected open-source tools and agent infrastructure focused on inspectability, performance, and local inference:
+### 🛠️ Projects
+
+All public software repositories (excluding core research prototypes):
 
 <!-- pinned-projects:start -->
-| project | what I built | signals |
+| project | what it does | signals |
 | --- | --- | --- |
-| [sefai](https://github.com/kanishkpaul/sefai) | Rust CLI for running local GGUF models through llama.cpp bindings inside a controlled environment | `Rust` &middot; `2 stars` |
-| [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | Terminal-first browser agent with visible traces, explicit safety gates, and a small eval loop | `TypeScript` &middot; `2 stars` |
-| [reasontrace](https://github.com/kanishkpaul/reasontrace) | Visual debugger for turning agent logs into an inspectable graph with step replay | `TypeScript` &middot; `1 star` |
-| [casca](https://github.com/kanishkpaul/casca) | Desktop-agent research scaffold for visual grounding and action-reliability research | `Python` &middot; `1 star` |
-| [stockfih](https://github.com/kanishkpaul/stockfih) | Chess-analysis interface pairing browser-side Stockfish with natural-language coaching | `TypeScript` &middot; `1 star` |
+| 🛡️ [sefai](https://github.com/kanishkpaul/sefai) | Runs local GGUF models inside a sandboxed environment via llama.cpp bindings. | `Rust` &middot; `2 stars` |
+| 🌐 [chromeclaw](https://github.com/kanishkpaul/chromeclaw) | Controls browser navigation and Web UI automation with step-by-step execution traces and safety guardrails. | `TypeScript` &middot; `2 stars` |
+| 🔍 [reasontrace](https://github.com/kanishkpaul/reasontrace) | Visualizes AI agent execution logs as interactive reasoning graphs with state replay. | `TypeScript` &middot; `1 star` |
+| 👁️ [casca](https://github.com/kanishkpaul/casca) | Grounds desktop computer-use actions through visual screenshot analysis and UI target verification. | `Python` &middot; `1 star` |
+| ♟️ [stockfih](https://github.com/kanishkpaul/stockfih) | Analyzes chess positions via browser-side Stockfish engine paired with natural-language move coaching. | `TypeScript` &middot; `1 star` |
+| 🎮 [lifesim](https://github.com/kanishkpaul/lifesim) | Simulates agent daily life routines, decision trees, and behavioral state progressions. | `Python` &middot; `0 stars` |
+| 📄 [ParaReport](https://github.com/kanishkpaul/ParaReport) | Generates structured analytical PDF reports and data summaries from JSON inputs. | `TypeScript` &middot; `0 stars` |
+| 📝 [craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment) | Executes an automated AI task assignment and workflow evaluation pipeline. | `TypeScript` &middot; `0 stars` |
 <!-- pinned-projects:end -->
 
 <br />
 
-## 🔬 Selected Research &amp; Experiments
+### 🔬 Research Projects
 
-Empirical explorations in language alignment, hidden-rule induction, and attention mechanisms:
+Dedicated research prototypes, measurement studies, and algorithmic benchmarks:
 
-| status | project | signal &amp; focus |
-| :---: | --- | --- |
-| `MEASURED` | [register-obstruction](https://github.com/kanishkpaul/register-obstruction) | Measurement of honorific-register loss across direct vs. English-pivot Bengali→Hindi translation pathways. |
-| `RUNNABLE` | [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) | World-model agent substrate for hidden-rule induction, uncertainty probing, and planning under constraints. |
-| `BENCHED` | [butterflygate](https://github.com/kanishkpaul/butterflygate) | Empirical benchmark evaluating sub-quadratic attention alternatives against dense transformers. |
+* 🔬 **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** (`Python`)
+  > Quantifies honorific-register loss across direct Bengali↔Hindi vs. English-pivot machine translation pathways.
+  > Evaluates how intermediate pivot languages degrade formal address structures in South Asian language pairs.
 
 <br />
 
-## 🧭 Core Principles
-
-> ✦ **Evidence before rhetoric** — Inspectable traces beat black-box claims.  
-> ✦ **Structure before scale** — Architectural precision over brute-force parameters.  
-> ✦ **Falsifiability as standard** — Negative results illuminate boundary conditions.  
-> ✦ **Local &amp; inspectable** — User-controlled execution over opaque cloud dependencies.
+* 🧩 **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** (`Python`)
+  > Operates as a world-model agent substrate for online rule induction, hypothesis probing, and active planning.
+  > Enables agents to explore hidden grid environments, test state transitions, and infer abstract ARC rules under spatial constraints.
 
 <br />
 
-<details>
-<summary><b>📊 Signal &amp; Activity Telemetry</b></summary>
+* ⚡ **[butterflygate](https://github.com/kanishkpaul/butterflygate)** (`Python`)
+  > Benchmarks sub-quadratic $\mathcal{O}(n \log n)$ attention mechanisms against dense self-attention architectures.
+  > Measures throughput, context window scalability, and memory consumption across long-sequence modeling benchmarks.
 
 <br />
+
+<!-- profile-badges:start -->
+  <a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>18 public repos</code></a>
+<!-- profile-badges:end -->
+
+<pre>
+$ cat telemetry.log
+</pre>
 
 <!-- stats-badges:start -->
 <pre>
@@ -94,28 +74,16 @@ public.repos             18
 </pre>
 <!-- stats-badges:end -->
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/output/github-snake.svg" />
-    <img alt="GitHub contribution activity" src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/output/github-snake.svg" width="100%" />
-  </picture>
-</p>
-
-</details>
-
 <br />
 
-## 📬 Connect
+<pre>
+$ cat contact.txt
+Email:    kanishkpaul1729@gmail.com
+Web:      https://kanishkpaul.com
+GitHub:   https://github.com/kanishkpaul
+LinkedIn: https://www.linkedin.com/in/kanishk-paul
+</pre>
 
-Working on reasoning systems, autonomous agents, multilingual NLP, or local model tooling? Reach out:
-
-<p align="center">
-  <a href="mailto:kanishkpaul1729@gmail.com"><code>email</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://kanishkpaul.com"><code>website</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://www.linkedin.com/in/kanishk-paul"><code>linkedin</code></a>
-  &nbsp;&middot;&nbsp;
-  <a href="https://github.com/kanishkpaul"><code>github</code></a>
-</p>
+    </td>
+  </tr>
+</table>
