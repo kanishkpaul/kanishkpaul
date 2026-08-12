@@ -22,12 +22,14 @@ $ ls selected-work/
 </pre>
 
 <!-- pinned-projects:start -->
-* 🌐 **[chromeclaw](https://github.com/kanishkpaul/chromeclaw)** — browser-agent scaffold with visible traces, safety gates, and an eval loop.
-* 🔍 **[reasontrace](https://github.com/kanishkpaul/reasontrace)** — visual debugger for agent traces, evidence coverage, and failure analysis.
-* 🏙️ **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — Kolkata-first civic intelligence app for turning local reports into verifiable civic receipts.
-* ♟️ **[stockfih](https://github.com/kanishkpaul/stockfih)** — browser-side chess analysis with grounded, human-readable coaching.
-* 👁️ **[casca](https://github.com/kanishkpaul/casca)** — desktop-agent experiment with structured actions, replayable runs, and confirmation modes.
-* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — Rust CLI for running local GGUF models with explicit offload controls.
+* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models inside a sandboxed llama.cpp runtime.
+* 🌐 **[chromeclaw](https://github.com/kanishkpaul/chromeclaw)** — drives Chrome from plain instructions and shows every step it took.
+* 🔍 **[reasontrace](https://github.com/kanishkpaul/reasontrace)** — replays an agent run as a graph you can step through state by state.
+* 👁️ **[casca](https://github.com/kanishkpaul/casca)** — turns screenshots into verified click targets for computer-use agents.
+* ♟️ **[stockfih](https://github.com/kanishkpaul/stockfih)** — analyses chess positions in the browser and explains each move in words.
+* 🎮 **[lifesim](https://github.com/kanishkpaul/lifesim)** — simulates an agent's daily routine, choices, and drifting internal state.
+* 📄 **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns raw JSON into a formatted, structured analytical PDF.
+* 📝 **[craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment)** — runs an AI task-assignment and evaluation pipeline end to end.
 <!-- pinned-projects:end -->
 
 <pre>
@@ -45,7 +47,13 @@ $ cat telemetry.log
 
 <!-- stats-badges:start -->
 <pre>
-repository stats refresh automatically
+lines.added       5,507,818
+lines.removed        62,959
+commits.counted         519
+stars.received           16
+followers                17
+following                 6
+public.repos             19
 </pre>
 <!-- stats-badges:end -->
 
@@ -58,7 +66,7 @@ linkedin  https://linkedin.com/in/kanishk-paul
 </pre>
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul?tab=repositories"><code>portfolio</code></a>
+<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>19 public repos</code></a>
 <!-- profile-badges:end -->
 
 </td>
