@@ -14,22 +14,22 @@ reasoning · autonomous agents
 multilingual NLP · local inference
 </pre>
 
-I build inspectable agent systems and small research prototypes. I care about
-evidence, failure analysis, and tools that leave a useful trail when they go wrong.
+I build inspectable agent systems, local-first tools, and research prototypes. I care about
+evidence, failure analysis, and products that leave a useful trail when they go wrong.
 
 <pre>
 $ ls selected-work/
 </pre>
 
 <!-- pinned-projects:start -->
-* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models inside a sandboxed llama.cpp runtime.
 * 🌐 **[chromeclaw](https://github.com/kanishkpaul/chromeclaw)** — drives Chrome from plain instructions and shows every step it took.
 * 🔍 **[reasontrace](https://github.com/kanishkpaul/reasontrace)** — replays an agent run as a graph you can step through state by state.
 * 👁️ **[casca](https://github.com/kanishkpaul/casca)** — turns screenshots into verified click targets for computer-use agents.
+* 🎙️ **[cutetuner](https://github.com/kanishkpaul/cutetuner)** — local vocal tuning with editable production plans, A/B previews, and no cloud uploads.
+* 🦇 **[batcave](https://github.com/kanishkpaul/batcave)** — a local-first macOS utility for goals, fitness and diet tracking, and global news.
 * ♟️ **[stockfih](https://github.com/kanishkpaul/stockfih)** — analyses chess positions in the browser and explains each move in words.
-* 🎮 **[lifesim](https://github.com/kanishkpaul/lifesim)** — simulates an agent's daily routine, choices, and drifting internal state.
-* 📄 **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns raw JSON into a formatted, structured analytical PDF.
-* 📝 **[craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment)** — runs an AI task-assignment and evaluation pipeline end to end.
+* 🏙️ **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — Kolkata-first civic intelligence with multilingual reports and local issue memory.
+* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models inside a sandboxed llama.cpp runtime.
 <!-- pinned-projects:end -->
 
 <pre>
