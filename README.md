@@ -47,13 +47,13 @@ $ cat telemetry.log
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,507,818
-lines.removed        62,959
+lines.added       5,507,441
+lines.removed        63,054
 commits.counted         519
-stars.received           16
+stars.received           15
 followers                17
 following                 6
-public.repos             19
+public.repos             13
 </pre>
 <!-- stats-badges:end -->
 
@@ -66,7 +66,7 @@ linkedin  https://linkedin.com/in/kanishk-paul
 </pre>
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>19 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>13 public repos</code></a>
 <!-- profile-badges:end -->
 
 </td>
