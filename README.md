@@ -47,10 +47,10 @@ $ cat telemetry.log
 
 <!-- stats-badges:start -->
 <pre>
-lines.added          87,578  # public only
-lines.removed        10,197
-commits.counted         126
-stars.received           11
+lines.added       5,497,737
+lines.removed        54,892
+commits.counted         520
+stars.received           15
 followers                17
 following                 6
 public.repos             16
