@@ -53,7 +53,7 @@ commits.counted         126
 stars.received           11
 followers                17
 following                 6
-public.repos             15
+public.repos             16
 </pre>
 <!-- stats-badges:end -->
 
@@ -66,7 +66,7 @@ linkedin  https://linkedin.com/in/kanishk-paul
 </pre>
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>17 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>16 public repos</code></a>
 <!-- profile-badges:end -->
 
 </td>
