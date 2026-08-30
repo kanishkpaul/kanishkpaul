@@ -1,74 +1,62 @@
-<table width="100%">
-  <tr>
-    <td width="104" valign="top">
-      <img src="./assets/rain-margin.svg" width="104" alt="Rain falling down the margin" />
-    </td>
-    <td valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg">
+  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg" width="100%" alt="Kanishk Paul — systems and research engineer. Observe, model, verify.">
+</picture>
 
 <pre>
-$ whoami
-Kanishk Paul — systems &amp; research engineer
-
-$ cat focus.txt
-reasoning · autonomous agents
-multilingual NLP · local inference
+DESIGNATION   KANISHK PAUL
+ROLE          SYSTEMS / RESEARCH ENGINEER
+DIRECTIVE     MAKE REASONING VISIBLE
+FOCUS         AGENTS · MULTILINGUAL NLP · LOCAL INFERENCE
 </pre>
 
-I build inspectable agent systems, local-first tools, and research prototypes. I care about
-evidence, failure analysis, and products that leave a useful trail when they go wrong.
+I build inspectable agent systems, local-first tools, and research prototypes. The common
+thread is evidence: systems should expose what they observed, why they acted, and where they
+failed.
 
-<pre>
-$ ls selected-work/
-</pre>
+## 01 / RESEARCH PROGRAMS
+
+> Three open problems. Measured claims, reproducible artifacts, and negative results included.
+
+- `R-01` **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** — measures honorific-register loss in Bengali→English→Hindi translation and reports the preregistered obstruction predictor that failed robustness testing.
+- `R-02` **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** — consolidates three auditable approaches to learning hidden ARC-AGI-3 game rules, with offline replay checks and a published Virgil planning trace.
+- `R-03` **[butterflygate](https://github.com/kanishkpaul/butterflygate)** — presents reproducible throughput evidence for a structured O(n log n) token mixer, while clearly separating its speed result from unproven modeling quality.
+
+## 02 / DEPLOYED SYSTEMS
 
 <!-- pinned-projects:start -->
-* 🛡️ **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models inside a sandboxed llama.cpp runtime.
-* 🌐 **[chromeclaw](https://github.com/kanishkpaul/chromeclaw)** — drives Chrome from plain instructions and shows every step it took.
-* 🔍 **[reasontrace](https://github.com/kanishkpaul/reasontrace)** — replays an agent run as a graph you can step through state by state.
-* 👁️ **[casca](https://github.com/kanishkpaul/casca)** — turns screenshots into verified click targets for computer-use agents.
-* ♟️ **[stockfih](https://github.com/kanishkpaul/stockfih)** — analyses chess positions in the browser and explains each move in words.
-* 🎮 **[lifesim](https://github.com/kanishkpaul/lifesim)** — simulates an agent's daily routine, choices, and drifting internal state.
-* 📄 **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns raw JSON into a formatted, structured analytical PDF.
-* 📝 **[craon-ai-assignment](https://github.com/kanishkpaul/craon-ai-assignment)** — runs an AI task-assignment and evaluation pipeline end to end.
+- `P-01` **[CUTE Tuner](https://github.com/kanishkpaul/cutetuner)** — runs a private, on-device vocal-production workflow from analysis and editable tuning plans through A/B previews and final exports.
+- `P-02` **[Batcave](https://github.com/kanishkpaul/batcave)** — combines goals, work sessions, fitness and diet logs, and cached global news in a local-first macOS application.
+- `P-03` **[ChromeClaw](https://github.com/kanishkpaul/chromeclaw)** — executes browser tasks through Playwright with explicit safety gates, inspectable JSONL traces, replay, and deterministic evaluation.
+- `P-04` **[ReasonTrace](https://github.com/kanishkpaul/reasontrace)** — turns agent logs into an interactive event graph with evidence diagnostics, timeline review, and exportable findings.
+- `P-05` **[Casca](https://github.com/kanishkpaul/casca)** — provides a screenshot-driven desktop-agent loop with typed actions, confirmations, dry runs, and visual replay.
+- `P-06` **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models from a Rust CLI with llama.cpp and explicit CPU, CUDA, or Vulkan offload controls.
+- `P-07` **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns multilingual Kolkata civic reports into clustered issue records, department-ready complaint packets, and shareable public receipts.
+- `P-08` **[Stockfih](https://github.com/kanishkpaul/stockfih)** — analyzes chess games with browser-side Stockfish and adds grounded natural-language coaching without replacing engine evidence.
+- `P-09` **[lifesim](https://github.com/kanishkpaul/lifesim)** — runs uncertainty-explicit Monte Carlo experiments over coupled career, relationship, health, and policy trade-offs.
 <!-- pinned-projects:end -->
 
-<pre>
-$ ls research/
-</pre>
-
-* 🔬 **[register-obstruction](https://github.com/kanishkpaul/register-obstruction)** — an empirical study of honorific-register loss in Bengali–Hindi translation, including an openly reported negative result.
-* 🧩 **[arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models)** — three auditable approaches to online world-model learning for ARC-AGI-3.
-* ⚡ **[butterflygate](https://github.com/kanishkpaul/butterflygate)** — a results preview for a structured O(n log n) token mixer, with reproducible throughput measurements.
-* 🎮 **[lifesim](https://github.com/kanishkpaul/lifesim)** — a deliberately uncertainty-aware simulator for structured life-planning thought experiments.
-
-<pre>
-$ cat telemetry.log
-</pre>
+## 03 / SYSTEM TELEMETRY
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,497,737
-lines.removed        54,892
-commits.counted         520
+lines.added       5,493,820
+lines.removed        54,765
+commits.counted         513
 stars.received           15
 followers                18
 following                 6
-public.repos             16
+public.repos             15
 </pre>
 <!-- stats-badges:end -->
 
-<pre>
-$ cat contact.txt
-email     kanishkpaul1729@gmail.com
-web       https://kanishkpaul.com
-github    https://github.com/kanishkpaul
-linkedin  https://linkedin.com/in/kanishk-paul
-</pre>
+## 04 / COMMUNICATION CHANNELS
+
+`WEB` [kanishkpaul.com](https://kanishkpaul.com) · `MAIL` [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · `LINKEDIN` [kanishk-paul](https://linkedin.com/in/kanishk-paul)
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>16 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
 <!-- profile-badges:end -->
 
-</td>
-  </tr>
-</table>
+<sub>STATUS // ACTIVE · LAST TELEMETRY REFRESH // AUTOMATED</sub>

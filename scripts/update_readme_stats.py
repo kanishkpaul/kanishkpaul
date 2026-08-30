@@ -19,9 +19,9 @@ GRAPHQL_URL = f"{API_ROOT}/graphql"
 @dataclass(frozen=True)
 class FeaturedRepo:
     name: str
+    display_name: str
     description: str
-    language: str
-    emoji: str = "📦"
+    code: str
 
 
 @dataclass(frozen=True)
@@ -34,52 +34,85 @@ class CommitStats:
 
 FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
     FeaturedRepo(
-        name="sefai",
-        description="runs local GGUF models inside a sandboxed llama.cpp runtime.",
-        language="Rust",
-        emoji="🛡️",
+        name="cutetuner",
+        display_name="CUTE Tuner",
+        description=(
+            "runs a private, on-device vocal-production workflow from analysis and "
+            "editable tuning plans through A/B previews and final exports."
+        ),
+        code="P-01",
+    ),
+    FeaturedRepo(
+        name="batcave",
+        display_name="Batcave",
+        description=(
+            "combines goals, work sessions, fitness and diet logs, and cached global "
+            "news in a local-first macOS application."
+        ),
+        code="P-02",
     ),
     FeaturedRepo(
         name="chromeclaw",
-        description="drives Chrome from plain instructions and shows every step it took.",
-        language="TypeScript",
-        emoji="🌐",
+        display_name="ChromeClaw",
+        description=(
+            "executes browser tasks through Playwright with explicit safety gates, "
+            "inspectable JSONL traces, replay, and deterministic evaluation."
+        ),
+        code="P-03",
     ),
     FeaturedRepo(
         name="reasontrace",
-        description="replays an agent run as a graph you can step through state by state.",
-        language="TypeScript",
-        emoji="🔍",
+        display_name="ReasonTrace",
+        description=(
+            "turns agent logs into an interactive event graph with evidence diagnostics, "
+            "timeline review, and exportable findings."
+        ),
+        code="P-04",
     ),
     FeaturedRepo(
         name="casca",
-        description="turns screenshots into verified click targets for computer-use agents.",
-        language="Python",
-        emoji="👁️",
+        display_name="Casca",
+        description=(
+            "provides a screenshot-driven desktop-agent loop with typed actions, "
+            "confirmations, dry runs, and visual replay."
+        ),
+        code="P-05",
     ),
     FeaturedRepo(
-        name="stockfih",
-        description="analyses chess positions in the browser and explains each move in words.",
-        language="TypeScript",
-        emoji="♟️",
-    ),
-    FeaturedRepo(
-        name="lifesim",
-        description="simulates an agent's daily routine, choices, and drifting internal state.",
-        language="Python",
-        emoji="🎮",
+        name="sefai",
+        display_name="sefai",
+        description=(
+            "runs local GGUF models from a Rust CLI with llama.cpp and explicit CPU, "
+            "CUDA, or Vulkan offload controls."
+        ),
+        code="P-06",
     ),
     FeaturedRepo(
         name="ParaReport",
-        description="turns raw JSON into a formatted, structured analytical PDF.",
-        language="TypeScript",
-        emoji="📄",
+        display_name="ParaReport",
+        description=(
+            "turns multilingual Kolkata civic reports into clustered issue records, "
+            "department-ready complaint packets, and shareable public receipts."
+        ),
+        code="P-07",
     ),
     FeaturedRepo(
-        name="craon-ai-assignment",
-        description="runs an AI task-assignment and evaluation pipeline end to end.",
-        language="TypeScript",
-        emoji="📝",
+        name="stockfih",
+        display_name="Stockfih",
+        description=(
+            "analyzes chess games with browser-side Stockfish and adds grounded "
+            "natural-language coaching without replacing engine evidence."
+        ),
+        code="P-08",
+    ),
+    FeaturedRepo(
+        name="lifesim",
+        display_name="lifesim",
+        description=(
+            "runs uncertainty-explicit Monte Carlo experiments over coupled career, "
+            "relationship, health, and policy trade-offs."
+        ),
+        code="P-09",
     ),
 )
 
@@ -346,14 +379,12 @@ def render_stats_badges(
 
 
 def render_featured_projects() -> str:
-    # Plain markdown list, not a table: GitHub strips every `style` attribute
-    # from README HTML, so a nested table inside the layout cell has no way to
-    # wrap long text and forces the whole page to scroll sideways.
     lines = []
     for featured_repo in FEATURED_REPOS:
         lines.append(
-            f"* {featured_repo.emoji} "
-            f"**[{featured_repo.name}](https://github.com/{REPO_OWNER}/{featured_repo.name})** "
+            f"- `{featured_repo.code}` "
+            f"**[{featured_repo.display_name}]"
+            f"(https://github.com/{REPO_OWNER}/{featured_repo.name})** "
             f"— {featured_repo.description}"
         )
 
