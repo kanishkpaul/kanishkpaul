@@ -1,8 +1,30 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg">
-  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg" width="100%" alt="Kanishk Paul — systems and research engineer. Observe, model, verify.">
-</picture>
+<pre>
+                              .-""""""""""""""""""""""""-.
+                         .-""                               ""-.
+                      .-'          .---o---o---o---.           `-.
+                    .'        .---'    \  |  /    `---.          `.
+                   /       .-'      o---o-o-o---o      `-.          \
+                  ;      .'       .-' \  |  / `-.       `.          ;
+                  |     /       o----o-o-o-o----o         \         |
+                  |    ;      .-'  .-'  |  `-.  `-.        ;        |
+                  |    |     /    o-----o-----o    \       |        |
+                  |    |    ;   .-' .-o-o-o-. `-.   ;      |        |
+                  |    |    |  /   /   | |   \   \  |      |        |
+                  |    |    | ;  o----o-o-o----o  ; |      |        |
+                  |    |    | |   \   / | \   /   | |      |        |
+                  |    |    | ;    `-'  o  `-'    ; |      |        |
+                  |    |     \      .-o-o-o-.     /         \       |
+                  |    ;      `-. o---o-o---o .-'            ;      |
+                  |     \         `---o---'                 /       |
+                  ;      `.              .-----.           .'       ;
+                   \       `-.        .-'       `-.      .-'        /
+                    `.        `""----'   .--.     `----""         .'
+                      `-.              .'    `.                .-'
+                         `--..__       /  _     \       __..--'
+                                  `----'  (_)     `-----'
+                                      `-.     .-'
+                                         `---'
+</pre>
 
 <pre>
 DESIGNATION   KANISHK PAUL
