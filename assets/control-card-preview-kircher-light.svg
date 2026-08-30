@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Paul — terminal control card with Athanasius Kircher's Tree of Life</title>
+  <desc id="desc">A terminal-like profile header that presents the unaltered 1653 Kircher Tree of Life engraving as an archival panel.</desc>
+  <defs>
+    <pattern id="warning" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="24" fill="#d85300"/><rect x="12" width="12" height="24" fill="#f7f4ed"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="420" fill="#e7e3da"/>
+  <rect x="12" y="12" width="976" height="396" fill="#f7f4ed" stroke="#18171b" stroke-width="2"/>
+  <rect x="12" y="12" width="16" height="396" fill="#3c7d14"/>
+  <rect x="28" y="12" width="960" height="16" fill="url(#warning)"/>
+
+  <text x="62" y="72" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="2.8">kanishk@research:~$ whoami</text>
+  <text x="62" y="136" fill="#18171b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="48" font-weight="700" letter-spacing="-2.5">Kanishk Paul</text>
+  <text x="64" y="172" fill="#5a575c" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" letter-spacing="1">systems / research engineer</text>
+  <path d="M64 194H575" stroke="#7b3faf" stroke-width="3"/>
+
+  <g transform="translate(64 226)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <text x="0" y="0" fill="#d85300" font-weight="700" letter-spacing="2">SYSTEM STATUS</text>
+    <text x="0" y="31" fill="#18171b">focus      agents · multilingual NLP · local inference</text>
+    <text x="0" y="57" fill="#18171b">directive  evidence before claims</text>
+    <text x="0" y="83" fill="#18171b">method     observe → model → verify</text>
+  </g>
+
+  <rect x="644" y="43" width="282" height="334" fill="#ede8dd" stroke="#18171b" stroke-width="2"/>
+  <image href="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/preview/eva-header-v2/assets/kircher-tree-of-life-1653.jpg" x="650" y="49" width="270" height="322" preserveAspectRatio="xMidYMid meet"/>
+  <text x="785" y="394" text-anchor="middle" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1.45">ATHANASIUS KIRCHER // 1653</text>
+
+  <text x="64" y="388" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.5">STATUS // ACTIVE</text>
+  <text x="958" y="332" transform="rotate(-90 958 332)" fill="#d85300" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.1">SYSTEMA SEPHIROTICVM</text>
+</svg>
