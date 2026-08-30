@@ -26,23 +26,23 @@ failed.
 
 <!-- pinned-projects:start -->
 - `P-01` **[CUTE Tuner](https://github.com/kanishkpaul/cutetuner)** — runs a private, on-device vocal-production workflow from analysis and editable tuning plans through A/B previews and final exports.
-- `P-02` **[Batcave](https://github.com/kanishkpaul/batcave)** — combines goals, work sessions, fitness and diet logs, and cached global news in a local-first macOS application.
-- `P-03` **[ChromeClaw](https://github.com/kanishkpaul/chromeclaw)** — executes browser tasks through Playwright with explicit safety gates, inspectable JSONL traces, replay, and deterministic evaluation.
+- `P-02` **[ChromeClaw](https://github.com/kanishkpaul/chromeclaw)** — executes browser tasks through Playwright with explicit safety gates, inspectable JSONL traces, replay, and deterministic evaluation.
+- `P-03` **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns multilingual Kolkata civic reports into clustered issue records, department-ready complaint packets, and shareable public receipts.
 - `P-04` **[ReasonTrace](https://github.com/kanishkpaul/reasontrace)** — turns agent logs into an interactive event graph with evidence diagnostics, timeline review, and exportable findings.
 - `P-05` **[Casca](https://github.com/kanishkpaul/casca)** — provides a screenshot-driven desktop-agent loop with typed actions, confirmations, dry runs, and visual replay.
 - `P-06` **[sefai](https://github.com/kanishkpaul/sefai)** — runs local GGUF models from a Rust CLI with llama.cpp and explicit CPU, CUDA, or Vulkan offload controls.
-- `P-07` **[ParaReport](https://github.com/kanishkpaul/ParaReport)** — turns multilingual Kolkata civic reports into clustered issue records, department-ready complaint packets, and shareable public receipts.
-- `P-08` **[Stockfih](https://github.com/kanishkpaul/stockfih)** — analyzes chess games with browser-side Stockfish and adds grounded natural-language coaching without replacing engine evidence.
-- `P-09` **[lifesim](https://github.com/kanishkpaul/lifesim)** — runs uncertainty-explicit Monte Carlo experiments over coupled career, relationship, health, and policy trade-offs.
+- `P-07` **[Batcave](https://github.com/kanishkpaul/batcave)** — combines goals, work sessions, fitness and diet logs, and cached global news in a local-first macOS application.
+- `P-08` **[lifesim](https://github.com/kanishkpaul/lifesim)** — runs uncertainty-explicit Monte Carlo experiments over coupled career, relationship, health, and policy trade-offs.
+- `P-09` **[Stockfih](https://github.com/kanishkpaul/stockfih)** — analyzes chess games with browser-side Stockfish and adds grounded natural-language coaching without replacing engine evidence.
 <!-- pinned-projects:end -->
 
 ## 03 / SYSTEM TELEMETRY
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       5,494,053
-lines.removed        54,870
-commits.counted         520
+lines.added       5,494,073
+lines.removed        54,890
+commits.counted         521
 stars.received           15
 followers                18
 following                 6
