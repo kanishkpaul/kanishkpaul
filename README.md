@@ -1,30 +1,7 @@
-<pre>
-                              .-""""""""""""""""""""""""-.
-                         .-""                               ""-.
-                      .-'          .---o---o---o---.           `-.
-                    .'        .---'    \  |  /    `---.          `.
-                   /       .-'      o---o-o-o---o      `-.          \
-                  ;      .'       .-' \  |  / `-.       `.          ;
-                  |     /       o----o-o-o-o----o         \         |
-                  |    ;      .-'  .-'  |  `-.  `-.        ;        |
-                  |    |     /    o-----o-----o    \       |        |
-                  |    |    ;   .-' .-o-o-o-. `-.   ;      |        |
-                  |    |    |  /   /   | |   \   \  |      |        |
-                  |    |    | ;  o----o-o-o----o  ; |      |        |
-                  |    |    | |   \   / | \   /   | |      |        |
-                  |    |    | ;    `-'  o  `-'    ; |      |        |
-                  |    |     \      .-o-o-o-.     /         \       |
-                  |    ;      `-. o---o-o---o .-'            ;      |
-                  |     \         `---o---'                 /       |
-                  ;      `.              .-----.           .'       ;
-                   \       `-.        .-'       `-.      .-'        /
-                    `.        `""----'   .--.     `----""         .'
-                      `-.              .'    `.                .-'
-                         `--..__       /  _     \       __..--'
-                                  `----'  (_)     `-----'
-                                      `-.     .-'
-                                         `---'
-</pre>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/preview/eva-header-v2/assets/hero-option-3-lab-notebook.svg">
+  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/preview/eva-header-v2/assets/hero-option-3-lab-notebook.svg" width="100%" alt="Kanishk Paul research dossier: inspectable reasoning systems and reproducible artifacts.">
+</picture>
 
 <pre>
 DESIGNATION   KANISHK PAUL
