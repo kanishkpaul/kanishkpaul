@@ -1,7 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg">
-  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/control-card-light.svg" width="100%" alt="Kanishk Paul — systems and research engineer. Observe, model, verify.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/hero-option-3-lab-notebook.svg">
+  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/main/assets/hero-option-3-lab-notebook.svg" width="100%" alt="Kanishk Paul research dossier: inspectable reasoning systems and reproducible artifacts.">
 </picture>
 
 <pre>
