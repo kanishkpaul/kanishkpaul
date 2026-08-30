@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Paul — terminal control card with an inverted Tree of Life glyph preview</title>
+  <desc id="desc">A terminal-like profile header with an original ten-node, inverted sephirotic Tree of Life glyph.</desc>
+  <defs>
+    <pattern id="warning" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="24" fill="#d85300"/>
+      <rect x="12" width="12" height="24" fill="#f7f4ed"/>
+    </pattern>
+    <filter id="signal" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="420" fill="#e7e3da"/>
+  <rect x="12" y="12" width="976" height="396" fill="#f7f4ed" stroke="#18171b" stroke-width="2"/>
+  <rect x="12" y="12" width="16" height="396" fill="#3c7d14"/>
+  <rect x="28" y="12" width="960" height="16" fill="url(#warning)"/>
+
+  <text x="62" y="72" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="2.8">kanishk@research:~$ whoami</text>
+  <text x="62" y="136" fill="#18171b" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="48" font-weight="700" letter-spacing="-2.5">Kanishk Paul</text>
+  <text x="64" y="172" fill="#5a575c" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" letter-spacing="1">systems / research engineer</text>
+  <path d="M64 194H575" stroke="#7b3faf" stroke-width="3"/>
+
+  <g transform="translate(64 226)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <text x="0" y="0" fill="#d85300" font-weight="700" letter-spacing="2">SYSTEM STATUS</text>
+    <text x="0" y="31" fill="#18171b">focus      agents · multilingual NLP · local inference</text>
+    <text x="0" y="57" fill="#18171b">directive  evidence before claims</text>
+    <text x="0" y="83" fill="#18171b">method     observe → model → verify</text>
+  </g>
+
+  <!-- An original, simplified inversion of Kircher's ten-node Tree of Life. -->
+  <g fill="none" stroke="#5d54c7" stroke-width="1.7" opacity=".82">
+    <path d="M785 74L785 108M785 108L727 146M785 108L843 146M727 146L727 204M843 146L843 204M727 204L785 222M843 204L785 222M727 204L843 204M785 222L727 266M785 222L843 266M727 266L785 310M843 266L785 310M727 266L843 266M785 310L785 346"/>
+    <path d="M727 146L843 204M843 146L727 204M727 204L843 266M843 204L727 266" opacity=".42"/>
+  </g>
+  <g fill="#f7f4ed" stroke="#18171b" stroke-width="2.5">
+    <circle cx="785" cy="74" r="9"/><circle cx="785" cy="108" r="9"/>
+    <circle cx="727" cy="146" r="9"/><circle cx="843" cy="146" r="9"/>
+    <circle cx="727" cy="204" r="9"/><circle cx="843" cy="204" r="9"/>
+    <circle cx="785" cy="222" r="10" fill="#d85300"/><circle cx="727" cy="266" r="9"/><circle cx="843" cy="266" r="9"/>
+    <circle cx="785" cy="310" r="9"/><circle cx="785" cy="346" r="9"/>
+  </g>
+  <circle cx="785" cy="222" r="3.5" fill="#fffdf7" filter="url(#signal)"/>
+  <path d="M649 55H921M649 365H921" stroke="#18171b" stroke-width="1" opacity=".45"/>
+  <text x="785" y="388" text-anchor="middle" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2.1">TREE / 10 // INVERTED</text>
+
+  <text x="64" y="388" fill="#3c7d14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.5">STATUS // ACTIVE</text>
+  <text x="958" y="332" transform="rotate(-90 958 332)" fill="#d85300" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.1">SYSTEMA SEPHIROTICVM</text>
+</svg>
