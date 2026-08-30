@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Kanishk Paul — terminal control card with SEELE glyph preview</title>
+  <desc id="desc">A terminal-like profile header with a seven-eyed inverted-triangle Evangelion glyph.</desc>
+  <defs>
+    <pattern id="warning" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="12" height="24" fill="#ef5b00"/>
+      <rect x="12" width="12" height="24" fill="#f3f0e8"/>
+    </pattern>
+    <g id="eye"><path d="M-13 0Q0-8 13 0Q0 8-13 0Z" fill="#f3f0e8" stroke="currentColor" stroke-width="2"/><circle r="3" fill="currentColor"/></g>
+  </defs>
+  <rect width="1000" height="420" fill="#e9e5dc"/>
+  <rect x="12" y="12" width="976" height="396" fill="#f3f0e8" stroke="#111114" stroke-width="2"/>
+  <rect x="12" y="12" width="16" height="396" fill="#68d92f"/>
+  <rect x="28" y="12" width="960" height="16" fill="url(#warning)"/>
+
+  <text x="62" y="72" fill="#4e9e24" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="15" font-weight="700" letter-spacing="2.8">kanishk@research:~$ whoami</text>
+  <text x="62" y="136" fill="#111114" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="48" font-weight="700" letter-spacing="-2.5">Kanishk Paul</text>
+  <text x="64" y="172" fill="#57544f" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" letter-spacing="1">systems / research engineer</text>
+  <path d="M64 194H575" stroke="#6f2da8" stroke-width="3"/>
+
+  <g transform="translate(64 226)" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">
+    <text x="0" y="0" fill="#ef5b00" font-weight="700" letter-spacing="2">SYSTEM STATUS</text>
+    <text x="0" y="31" fill="#111114">focus      agents · multilingual NLP · local inference</text>
+    <text x="0" y="57" fill="#111114">directive  evidence before claims</text>
+    <text x="0" y="83" fill="#111114">method     observe → model → verify</text>
+  </g>
+
+  <g fill="none" stroke="#111114" stroke-width="4" stroke-linejoin="round">
+    <path d="M647 78H923L785 325Z"/>
+    <path d="M785 78V325" stroke-width="2" opacity=".55"/>
+  </g>
+  <g>
+    <use href="#eye" transform="translate(729 135)" color="#dd3a35"/>
+    <use href="#eye" transform="translate(729 193)" color="#d98800"/>
+    <use href="#eye" transform="translate(729 251)" color="#b58a00"/>
+    <use href="#eye" transform="translate(841 116)" color="#4e9e24"/>
+    <use href="#eye" transform="translate(841 166)" color="#007ea7"/>
+    <use href="#eye" transform="translate(841 216)" color="#5046b8"/>
+    <use href="#eye" transform="translate(841 266)" color="#9c3aa8"/>
+  </g>
+  <text x="785" y="364" text-anchor="middle" fill="#4e9e24" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2.5">SEELE / 07</text>
+
+  <text x="64" y="388" fill="#4e9e24" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.5">STATUS // ACTIVE</text>
+  <text x="958" y="332" transform="rotate(-90 958 332)" fill="#ef5b00" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2.4">THE SEVEN EYES OBSERVE</text>
+</svg>
