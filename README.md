@@ -52,10 +52,8 @@ public.repos             15
 
 ## 04 / COMMUNICATION CHANNELS
 
-`WEB` [kanishkpaul.com](https://kanishkpaul.com) · `MAIL` [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · `LINKEDIN` [kanishk-paul](https://linkedin.com/in/kanishk-paul)
+`WEB` [kanishkpaul.com](https://kanishkpaul.com) · `MAIL` [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · `LINKEDIN` [kanishk-paul](https://linkedin.com/in/kanishk-paul) · `TWITTER` [@kanishkpaul](https://x.com/kanishkpaul)
 
 <!-- profile-badges:start -->
 <a href="https://github.com/kanishkpaul"><code>18 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
 <!-- profile-badges:end -->
-
-<sub>STATUS // ACTIVE · LAST TELEMETRY REFRESH // AUTOMATED</sub>
