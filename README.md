@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/183c7bd/assets/hero-option-3-lab-notebook.svg">
-  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/183c7bd/assets/hero-option-3-lab-notebook.svg" width="100%" alt="Kanishk Paul research dossier: inspectable reasoning systems and reproducible artifacts.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/519efae/assets/hero-option-3-lab-notebook.svg">
+  <img src="https://raw.githubusercontent.com/kanishkpaul/kanishkpaul/519efae/assets/hero-option-3-lab-notebook.svg" width="100%" alt="Kanishk Paul research dossier: inspectable reasoning systems and reproducible artifacts.">
 </picture>
 
 <pre>
