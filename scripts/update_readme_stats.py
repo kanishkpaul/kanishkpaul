@@ -43,20 +43,20 @@ FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
         code="P-01",
     ),
     FeaturedRepo(
-        name="batcave",
-        display_name="Batcave",
-        description=(
-            "combines goals, work sessions, fitness and diet logs, and cached global "
-            "news in a local-first macOS application."
-        ),
-        code="P-02",
-    ),
-    FeaturedRepo(
         name="chromeclaw",
         display_name="ChromeClaw",
         description=(
             "executes browser tasks through Playwright with explicit safety gates, "
             "inspectable JSONL traces, replay, and deterministic evaluation."
+        ),
+        code="P-02",
+    ),
+    FeaturedRepo(
+        name="ParaReport",
+        display_name="ParaReport",
+        description=(
+            "turns multilingual Kolkata civic reports into clustered issue records, "
+            "department-ready complaint packets, and shareable public receipts."
         ),
         code="P-03",
     ),
@@ -88,22 +88,13 @@ FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
         code="P-06",
     ),
     FeaturedRepo(
-        name="ParaReport",
-        display_name="ParaReport",
+        name="batcave",
+        display_name="Batcave",
         description=(
-            "turns multilingual Kolkata civic reports into clustered issue records, "
-            "department-ready complaint packets, and shareable public receipts."
+            "combines goals, work sessions, fitness and diet logs, and cached global "
+            "news in a local-first macOS application."
         ),
         code="P-07",
-    ),
-    FeaturedRepo(
-        name="stockfih",
-        display_name="Stockfih",
-        description=(
-            "analyzes chess games with browser-side Stockfish and adds grounded "
-            "natural-language coaching without replacing engine evidence."
-        ),
-        code="P-08",
     ),
     FeaturedRepo(
         name="lifesim",
@@ -111,6 +102,15 @@ FEATURED_REPOS: tuple[FeaturedRepo, ...] = (
         description=(
             "runs uncertainty-explicit Monte Carlo experiments over coupled career, "
             "relationship, health, and policy trade-offs."
+        ),
+        code="P-08",
+    ),
+    FeaturedRepo(
+        name="stockfih",
+        display_name="Stockfih",
+        description=(
+            "analyzes chess games with browser-side Stockfish and adds grounded "
+            "natural-language coaching without replacing engine evidence."
         ),
         code="P-09",
     ),
