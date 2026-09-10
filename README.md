@@ -44,7 +44,7 @@ lines.added       5,839,507
 lines.removed        68,129
 commits.counted         627
 stars.received           15
-followers                19
+followers                20
 following                 6
 public.repos             15
 </pre>
@@ -55,5 +55,5 @@ public.repos             15
 `WEB` [kanishkpaul.com](https://kanishkpaul.com) · `MAIL` [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · `LINKEDIN` [kanishk-paul](https://linkedin.com/in/kanishk-paul) · `TWITTER` [@kanishkpaul](https://x.com/kanishkpaul)
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>19 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>20 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
 <!-- profile-badges:end -->
