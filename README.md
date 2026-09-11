@@ -40,13 +40,13 @@ failed.
 
 <!-- stats-badges:start -->
 <pre>
-lines.added       6,342,441
-lines.removed        76,131
-commits.counted         892
+lines.added       6,451,015
+lines.removed        76,451
+commits.counted         906
 stars.received           15
 followers                20
 following                 6
-public.repos             15
+public.repos             16
 </pre>
 <!-- stats-badges:end -->
 
@@ -55,5 +55,5 @@ public.repos             15
 `WEB` [kanishkpaul.com](https://kanishkpaul.com) · `MAIL` [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · `LINKEDIN` [kanishk-paul](https://linkedin.com/in/kanishk-paul) · `TWITTER` [@kanishkpaul](https://x.com/kanishkpaul)
 
 <!-- profile-badges:start -->
-<a href="https://github.com/kanishkpaul"><code>20 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>15 public repos</code></a>
+<a href="https://github.com/kanishkpaul"><code>20 followers</code></a> · <a href="https://github.com/kanishkpaul?tab=repositories"><code>16 public repos</code></a>
 <!-- profile-badges:end -->
