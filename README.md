@@ -6,7 +6,6 @@
 
 ## research
 
-- [register-obstruction](https://github.com/kanishkpaul/register-obstruction) - measures honorific-register loss when bengali to hindi translation pivots through english.
 - [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) - agents that learn the hidden rules of arc-agi-3 games from building world models.
 - [butterflygate](https://github.com/kanishkpaul/butterflygate) - an O(n log n) replacement for self-attention, with measured speedups on gemma and llama.
 - [resonatorlm-audit](https://github.com/kanishkpaul/resonatorlm-audit) - an independent replication of resonatorlm showing it is a diagonal state-space model.
