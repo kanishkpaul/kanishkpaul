@@ -29,20 +29,6 @@
 
 [kanishkpaul.com](https://kanishkpaul.com)
 
-<<<<<<< Updated upstream
-<!-- stats-badges:start -->
-<pre>
-lines.added       9,896,435
-lines.removed       191,773
-commits.counted       1,141
-stars.received           15
-followers                22
-following                 8
-public.repos             16
-</pre>
-<!-- stats-badges:end -->
-=======
 ## contact
->>>>>>> Stashed changes
 
 [kanishkpaul1729@gmail.com](mailto:kanishkpaul1729@gmail.com) · [LinkedIn](https://linkedin.com/in/kanishk-paul) · [X](https://x.com/kanishkpaul)
