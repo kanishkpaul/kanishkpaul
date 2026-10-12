@@ -10,7 +10,7 @@
 - [butterflygate](https://github.com/kanishkpaul/butterflygate) - an O(n log n) replacement for self-attention, with measured speedups on gemma and llama.
 - [resonatorlm-audit](https://github.com/kanishkpaul/resonatorlm-audit) - an independent replication of resonatorlm showing it is a diagonal state-space model.
 
-## tools
+## projects
 
 - [reasontrace](https://github.com/kanishkpaul/reasontrace) - a visual debugger for agent traces and failure analysis.
 - [chromeclaw](https://github.com/kanishkpaul/chromeclaw) - a browser agent with safety gates, replayable traces, and deterministic evals.
