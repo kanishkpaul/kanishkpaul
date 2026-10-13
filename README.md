@@ -12,13 +12,13 @@
 
 ## projects
 
+- [maiku](https://github.com/kanishkpaul/maiku) - connect any number of intelligences & tools to each other and make it all work together.
+- [horizon](https://github.com/kanishkpaul/horizon) - a game-theoretic simulator on a vector database of opportunities you have to show your life trajectory.
 - [reasontrace](https://github.com/kanishkpaul/reasontrace) - a visual debugger for agent traces and failure analysis.
 - [chromeclaw](https://github.com/kanishkpaul/chromeclaw) - a browser agent with safety gates, replayable traces, and deterministic evals.
 - [casca](https://github.com/kanishkpaul/casca) - a screenshot-driven desktop agent with typed actions and dry runs.
 - [sefai](https://github.com/kanishkpaul/sefai) - a rust CLI for running GGUF models locally with explicit GPU offload.
 - [parareport](https://github.com/kanishkpaul/parareport) - turns multilingual kolkata civic reports into department-ready complaints.
-- [cutetuner](https://github.com/kanishkpaul/cutetuner) - an on-device vocal tuning studio with A/B previews.
-- [lifesim](https://github.com/kanishkpaul/lifesim) - monte carlo simulation of life-planning trade-offs, with explicit uncertainty.
 - [stockfih](https://github.com/kanishkpaul/stockfih) - chess analysis with Stockfish and grounded natural-language coaching.
 
 ## contributions
