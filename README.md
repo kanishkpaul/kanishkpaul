@@ -27,6 +27,7 @@
 - [gambit](https://github.com/kanishkpaul/gambit) - a local chess tutor that turns mistakes from your games into puzzles.
 - [logbook](https://github.com/kanishkpaul/logbook) - a daily log for work, food, sleep and energy, with live timers and trends.
 - [granite](https://github.com/kanishkpaul/granite) - a local-first markdown vault for notes and papers, with cited ai answers.
+- [haha](https://github.com/kanishkpaul/haha) - a local tool for tailoring one-page resumes to job postings, with a source for every claim.
 
 ## contributions
 
