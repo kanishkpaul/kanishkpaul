@@ -21,6 +21,13 @@
 - [parareport](https://github.com/kanishkpaul/parareport) - civic reporting for kolkata's "paras": receipts, a local map and a shared record.
 - [stockfih](https://github.com/kanishkpaul/stockfih) - in-browser stockfish analysis with grounded, human-readable chess coaching.
 
+## mac apps i use daily
+
+- [talon](https://github.com/kanishkpaul/talon) - a menu bar app for per-app resource limits, hardware health and disk cleanup.
+- [gambit](https://github.com/kanishkpaul/gambit) - a local chess tutor that turns mistakes from your games into puzzles.
+- [logbook](https://github.com/kanishkpaul/logbook) - a daily log for work, food, sleep and energy, with live timers and trends.
+- [granite](https://github.com/kanishkpaul/granite) - a local-first markdown vault for notes and papers, with cited ai answers.
+
 ## contributions
 
 - [unify-agent](https://github.com/unifyai/unify-agent/pull/171) - merged a fix so sharepoint uploads reject bad base64 instead of corrupting files.
