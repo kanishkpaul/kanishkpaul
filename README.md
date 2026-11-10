@@ -6,20 +6,20 @@
 
 ## research
 
-- [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) - agents that learn the hidden rules of arc-agi-3 games from building world models.
-- [butterflygate](https://github.com/kanishkpaul/butterflygate) - an O(n log n) replacement for self-attention, with measured speedups on gemma and llama.
+- [arc-agi3-world-models](https://github.com/kanishkpaul/arc-agi3-world-models) - results and evidence from seven arc research systems, including 0sr (70/400 on arc-agi-1 in 84 kb) and arc-agi-3 agents that learn games by playing them.
+- [butterflygate](https://github.com/kanishkpaul/butterflygate) - forward-pass measurements of experimental attention replacements in gemma and llama: faster at long context, quality still unresolved.
 - [resonatorlm-audit](https://github.com/kanishkpaul/resonatorlm-audit) - an independent replication of resonatorlm showing it is a diagonal state-space model.
 
 ## projects
 
-- [maiku](https://github.com/kanishkpaul/maiku) - connect any number of intelligences & tools to each other and make it all work together.
-- [horizon](https://github.com/kanishkpaul/horizon) - a game-theoretic simulator on a vector database of opportunities you have to show your life trajectory.
+- [maiku](https://github.com/kanishkpaul/maiku) - a local-first universal adapter that lets models, tools, devices and interfaces cooperate through shared interaction contracts (rust rebuild in progress).
+- [horizon](https://github.com/kanishkpaul/horizon) - a local-first decision os that applies game theory to what you know, what's possible and what you've committed to (rust rebuild in progress).
 - [reasontrace](https://github.com/kanishkpaul/reasontrace) - a visual debugger for agent traces and failure analysis.
-- [chromeclaw](https://github.com/kanishkpaul/chromeclaw) - a browser agent with safety gates, replayable traces, and deterministic evals.
-- [casca](https://github.com/kanishkpaul/casca) - a screenshot-driven desktop agent with typed actions and dry runs.
+- [chromeclaw](https://github.com/kanishkpaul/chromeclaw) - a terminal-first browser agent with safety gates, visible traces, and a compact eval loop. runs on any model, local or with your own key.
+- [casca](https://github.com/kanishkpaul/casca) - a desktop agent in your terminal that sees your screen, acts one step at a time, and asks before anything it can't undo. runs on any model, local or with your own key.
 - [sefai](https://github.com/kanishkpaul/sefai) - a rust CLI for running GGUF models locally with explicit GPU offload.
-- [parareport](https://github.com/kanishkpaul/parareport) - turns multilingual kolkata civic reports into department-ready complaints.
-- [stockfih](https://github.com/kanishkpaul/stockfih) - chess analysis with Stockfish and grounded natural-language coaching.
+- [parareport](https://github.com/kanishkpaul/parareport) - a civic reporting prototype for kolkata's "paras". resident reports become saved receipts, a neighbourhood map and a shared record.
+- [stockfih](https://github.com/kanishkpaul/stockfih) - in-browser stockfish analysis with grounded, human-readable chess coaching.
 
 ## contributions
 
